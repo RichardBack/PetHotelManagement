@@ -22,6 +22,6 @@ The **Pet Hotel Management System** is one of my key projects that showcases my 
 
 
 ## 💻 Check Out My Code  
-You can view the full project and my other work on GitHub: [Richard's GitHub - PetHotelManagement](https://github.com/RichardBack/PetHotelManagement)
-
+You can view the full project and my other work on GitHub: [Richard's GitHub - PetHotelManagement](https://github.com/RichardBack/PetHotelManagement)  
+Or visit the project’s **GitHub Pages** site: [Pet Hotel Management](https://richardback.github.io/PetHotelManagement/)
 ![Richard's Profile](https://raw.githubusercontent.com/NewtonianLaw/NewtonianLaw.github.io/main/Github_Photo.jpg)
