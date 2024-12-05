@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    text-align: center;
+    text-align: center; /* Keep the default center alignment for general text */
 }
 
 h1, h2, h3 {
@@ -25,21 +25,6 @@ h1, h2, h3 {
     font-style: italic;
     margin-top: 20px;
     color: maroon;  /* Set the color of 'By Richard' to maroon */
-}
-
-/* General layout styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-h1, h2, h3 {
-    margin-top: 10px;
-    color: blue;  /* Ensure h1, h2, h3 titles are blue */
 }
 
 /* Category sections styling */
@@ -62,7 +47,7 @@ h1, h2, h3 {
 .category p {
     font-size: 16px;
     margin-bottom: 20px;
-    text-align: justify;
+    text-align: justify; /* Justify the text for readability */
 }
 
 /* Image container styles */
@@ -81,4 +66,29 @@ h1, h2, h3 {
 
 .image-gallery img {
     width: 45%;  /* Adjust width for the images to sit side by side */
+}
+
+/* ePortfolio Section Styling: Left Align the Content */
+.eportfolio {
+    text-align: left; /* Align text to the left */
+    margin: 20px;
+    padding: 15px;
+}
+
+.eportfolio h2, .eportfolio h3 {
+    text-align: left; /* Align titles to the left */
+    color: blue;  /* Keep the color consistent */
+}
+
+.eportfolio p {
+    text-align: left; /* Align paragraph text to the left */
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Make sure links are left aligned as well */
+.eportfolio a {
+    text-align: left; 
+    display: block;
+    margin-top: 10px;
 }
