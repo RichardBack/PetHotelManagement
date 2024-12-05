@@ -3,51 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>The Dogs Cats Hotel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center; /* Center-aligns all content in the body */
-        }
-        header {
-            background-color: #f9f9f9;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3em; /* Makes "The Dogs Cats Hotel" larger */
-            margin: 0;
-            color: #333;
-        }
-        h2 {
-            font-size: 1.5em; /* Adjusts size for "By Richard Backscheider" */
-            margin: 10px 0 0;
-            color: #555;
-        }
-        .images-container {
-            display: flex;
-            justify-content: center; /* Centers the images horizontally */
-            gap: 20px; /* Adds spacing between images */
-            margin: 20px 0;
-        }
-        .images-container img {
-            max-width: 300px;
-            height: auto;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body>
-    <header>
+    <div class="title">
         <h1>The Dogs Cats Hotel</h1>
         <h2>By Richard Backscheider</h2>
-    </header>
-    <div class="images-container">
-        <img src="image1.jpg" alt="Dog in the hotel">
-        <img src="image2.jpg" alt="Cat in the hotel">
+    </div>
+    <div class="content">
+        <div class="section">
+            <h3>Category One: Software Engineering and Design</h3>
+            <p>The artifact chosen for category one is IT-145 Foundation in App Development...</p>
+            <img src="category1.jpg" alt="Category One Image">
+        </div>
+        <div class="section">
+            <h3>Category Two: Algorithms and Data Structures</h3>
+            <p>The chosen artifact for category two...</p>
+            <img src="category2.jpg" alt="Category Two Image">
+        </div>
+        <div class="section side-by-side">
+            <div>
+                <h3>Category Three: Databases</h3>
+                <p>The chosen artifact for category three emphasizes...</p>
+            </div>
+            <img src="category3.jpg" alt="Category Three Image">
+        </div>
     </div>
 </body>
 </html>
