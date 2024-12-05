@@ -1,0 +1,167 @@
+package com.pethotelproject;
+
+public class Pet {
+
+    private String petType;
+    private String petName;
+    private int petAgeYears;
+    private int petAgeMonths;
+    private int petSpace; // Changed from dogSpace to petSpace to accommodate all types of pets
+    private int daysStay;
+    private double amountDue;
+
+    public Pet() {
+        petType = "none";
+        petName = "none";
+        petAgeYears = 0;
+        petAgeMonths = 0;
+        petSpace = 0;
+        daysStay = 0;
+        amountDue = 0.0;
+    }
+
+    public Pet(String petType, String petName, int petAgeYears, int petAgeMonths, int petSpace, int daysStay, double amountDue) {
+        this.petType = petType;
+        this.petName = petName;
+        this.petAgeYears = petAgeYears;
+        this.petAgeMonths = petAgeMonths;
+        this.petSpace = petSpace;
+        this.daysStay = daysStay;
+        this.amountDue = amountDue;
+    }
+
+    // Getters and setters
+
+    public String getPetType() {
+        return petType;
+    }
+
+    public void setPetType(String petType) {
+        this.petType = petType;
+    }
+
+    public String getPetName() {
+        return petName;
+    }
+
+    public void setPetName(String petName) {
+        this.petName = petName;
+    }
+
+    public int getPetAgeYears() {
+        return petAgeYears;
+    }
+
+    public void setPetAgeYears(int petAgeYears) {
+        this.petAgeYears = petAgeYears;
+    }
+    
+    public int getPetAgeMonths() {
+        return petAgeMonths;
+    }
+
+    public void setPetAgeMonths(int petAgeMonths) {
+        this.petAgeMonths = petAgeMonths;
+    }
+
+    public int getPetSpace() {
+        return petSpace;
+    }
+
+    public void setPetSpace(int petSpace) {
+        this.petSpace = petSpace;
+    }
+    
+    public int getDaysStay() {
+        return daysStay;
+    }
+
+    public void setDaysStay(int daysStay) {
+        this.daysStay = daysStay;
+    }
+
+    public double getAmountDue() {
+        return amountDue;
+    }
+
+    public void setAmountDue(double amountDue) {
+        this.amountDue = amountDue;
+    }
+
+    /* Implement the Pet objects behavior methods below */
+
+    /*
+     * Keep in mind that the methods signatures like: 
+     * 
+     * public static void checkIn(...)
+     * 
+     * will eventually have to change to something like: 
+     * 
+     * public boolean checkIn(...)
+     * 
+     * This will happen because another "driver" program
+     * named something like "GlobalDriver.java", that has 
+     * a public static void main(..) method in it, will 
+     * actually be the one that instantiates (create) the 
+     * Pet, Dog, Cat and/or other types of pets objects from within it 
+     * and then call the public Pet behavior methods. 
+     * */ 
+    
+    // Behavior methods    
+    public void checkIn() {
+        // Implement check-in logic
+    	System.out.println("Checking in " + petName + " the " + petType);
+        // Example: update petSpace or reservation system
+    }
+
+    public void checkout() {
+        // Implement checkout logic
+    	System.out.println("Checking out " + petName + " the " + petType);
+        // Example: update petSpace, calculate amountDue, etc.
+    }
+
+    public void getPetInfo() {
+        // Implement get pet information logical
+    	 System.out.println("Pet Information:");
+         System.out.println("Type: " + petType);
+         System.out.println("Name: " + petName);
+         System.out.println("Age: " + petAgeYears + " years and " + petAgeMonths + " months");
+         System.out.println("Days Stayed: " + daysStay);
+         System.out.println("Amount Due: $" + amountDue);
+         System.out.println(); // Adding a blank line for spacing between pet information
+    }
+
+    public void createPet(String petType, String petName, int petAgeYears, int petAgeMonths, int petSpace, int daysStay, double amountDue) {
+         // Implement pet creation logic
+    	 this.petType = petType;
+         this.petName = petName;
+         this.petAgeYears = petAgeYears;
+         this.petAgeMonths = petAgeMonths;
+         this.petSpace = petSpace;
+         this.daysStay = daysStay;
+         this.amountDue = amountDue;
+         // Example: validate inputs, update database, etc.
+     }
+
+    public void updatePet(int daysStay, double amountDue) {
+        // Implement pet update logic
+    	 this.daysStay = daysStay;
+         this.amountDue = amountDue;
+         // Example: validate inputs, update database, etc.
+    }
+    
+    public static void main(String[] args) {
+        // Creating instance of Pet (a dog named Nami)
+        Pet pet1 = new Pet("Dog", "Nami", 0, 6, 1, 7, 100.0); // Pet 1 Age: 0 years and 6 months
+        pet1.getPetInfo();
+        
+        // Creating instance of Pet (a cat named Saki)
+        Pet pet2 = new Pet("Cat", "Saki", 0, 4, 1, 7, 100.0); // Pet 2 Age: 0 years and 4 months
+        pet2.getPetInfo();
+        
+        // Creating instance of Pet (a bird named Roadrunner)
+        Pet pet3 = new Pet("Bird", "Roadrunner", 10, 0, 1, 7, 100.0); // Pet 3 Age: 10 years
+        pet3.getPetInfo();
+  	
+    }
+}
