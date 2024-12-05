@@ -33,3 +33,33 @@ img {
 .side-by-side div {
     flex: 2;
 }
+
+/* Additional section styling for category-based layout */
+.category {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Image container for individual images under each category */
+.image-container, .image-gallery {
+    text-align: center;
+}
+
+.category-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Gallery for two images side by side in category three */
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style for individual images in the gallery */
+.image-gallery img {
+    width: 45%;  /* Adjust width for the images to sit side by side */
+}
