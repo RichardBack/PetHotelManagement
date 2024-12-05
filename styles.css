@@ -16,6 +16,7 @@ h1, h2, h3 {
 .main-title {
     text-align: center;
     margin: 10px 0;
+    color: blue;  /* Set the color of titles to blue */
 }
 
 /* Center the 'By Richard' text */
@@ -23,6 +24,22 @@ h1, h2, h3 {
     text-align: center;
     font-style: italic;
     margin-top: 20px;
+    color: maroon;  /* Set the color of 'By Richard' to maroon */
+}
+
+/* General layout styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin-top: 10px;
+    color: blue;  /* Ensure h1, h2, h3 titles are blue */
 }
 
 /* Category sections styling */
@@ -38,6 +55,7 @@ h1, h2, h3 {
 .category h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: blue;  /* Ensure category titles are blue */
 }
 
 /* Paragraph styling */
