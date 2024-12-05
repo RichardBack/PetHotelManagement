@@ -12,6 +12,19 @@ h1, h2, h3 {
     margin-top: 10px;
 }
 
+/* Center all titles */
+.main-title {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Center the 'By Richard' text */
+.by-author {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+
 /* Category sections styling */
 .category {
     margin: 20px;
