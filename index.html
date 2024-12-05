@@ -3,44 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Hotel Management</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>The Dogs Cats Hotel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center-aligns all content in the body */
+        }
+        header {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em; /* Makes "The Dogs Cats Hotel" larger */
+            margin: 0;
+            color: #333;
+        }
+        h2 {
+            font-size: 1.5em; /* Adjusts size for "By Richard Backscheider" */
+            margin: 10px 0 0;
+            color: #555;
+        }
+        .images-container {
+            display: flex;
+            justify-content: center; /* Centers the images horizontally */
+            gap: 20px; /* Adds spacing between images */
+            margin: 20px 0;
+        }
+        .images-container img {
+            max-width: 300px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Pet Hotel Management</h1>
-        <p>TheDogsCatsHotel</p>
-        <p>By Richard Backscheider</p>
+        <h1>The Dogs Cats Hotel</h1>
+        <h2>By Richard Backscheider</h2>
     </header>
-
-    <main>
-        <!-- Category One Section -->
-        <section class="project">
-            <h2>Category One: Software Engineering and Design</h2>
-            <p>The artifact chosen for category one, Software Engineering and Design, is IT-145 Foundation in App Development. Pet Boarding and Grooming (Pet BAG) is developing software tailored to manage operations for dogs. The goal is to replace the outdated paper-based processes with efficient digital solutions. The system now handles essential functions such as dog check-in and check-out, pet management tasks, feeding schedules and yard times, and administrative features, including updating pet information and tracking payment statuses. It includes specialized capabilities like managing specialized services, available exclusively for pets staying two days or more. The software streamlines operations within the boarding facility, ensuring smooth processes from arrival to departure for all pet guests.</p>
-            <img src="https://raw.githubusercontent.com/RichardBack/PetHotelManagement/main/images/cats_dogs_kennel.jpg" alt="Category One Image" />
-        </section>
-
-        <!-- Category Two Section -->
-        <section class="project">
-            <h2>Category Two: Algorithms and Data Structures</h2>
-            <p>The artifact chosen for category two, Algorithms and Data Structures, will continue with IT-145 Foundation in App Development. The Java-based Pet Hotel Management program employed algorithms to optimize various operations essential to pet care and management. For instance, the program uses algorithms such as binary search to locate specific pet records within large datasets, ensuring quick access and retrieval during the ‘checkIn’ and ‘checkout’ processes. Sorting algorithms played a crucial role in organizing pets based on criteria such as arrival dates or service requirements, facilitating smoother scheduling and space allocation within the boarding facility. These algorithmic implementations were pivotal in enhancing the program’s efficiency, reducing processing times, and ensuring seamless management of pet-related tasks throughout the system.</p>
-            <img src="https://raw.githubusercontent.com/RichardBack/PetHotelManagement/main/images/dog_kennel.png" alt="Category Two Image" />
-        </section>
-
-        <!-- Category Three Section -->
-        <section class="project">
-            <h2>Category Three: Databases</h2>
-            <p>The chosen artifact for category three, Databases, extends the concepts covered in IT-145 Foundation in App Development, emphasizing software engineering, design, algorithms, data structures, and database integration. Within the Java-based Pet Hotel Management program, databases were pivotal for efficiently storing and managing pet records. Information such as pet type, name, age, allocated boarding space, duration of stay, and fees were structured and stored systematically in the database. The database integration enabled rapid retrieval and manipulation of pet data during essential operations like ‘checkIn,’ ‘checkout,’ and updates to pet details. By leveraging databases, the program ensured data consistency and scalability and optimized handling tasks related to pet management across the entire system.</p>
-            <div class="image-container">
-                <img src="https://raw.githubusercontent.com/RichardBack/PetHotelManagement/main/images/kennel_cottage.png" alt="Category Three Image" />
-                <img src="https://raw.githubusercontent.com/RichardBack/PetHotelManagement/main/images/kitty_kitty.webp" alt="Kitty Kitty Image" />
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Richard Backscheider</p>
-    </footer>
+    <div class="images-container">
+        <img src="image1.jpg" alt="Dog in the hotel">
+        <img src="image2.jpg" alt="Cat in the hotel">
+    </div>
 </body>
 </html>
