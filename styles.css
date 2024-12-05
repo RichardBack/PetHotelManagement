@@ -1,65 +1,59 @@
-/* Center the titles */
+/* General layout styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Center all titles */
 .title {
     text-align: center;
     margin-top: 20px;
+    font-family: 'Arial', sans-serif;
 }
 
-/* Style the sections */
-.section {
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: left;
-}
-
-/* Style the images */
-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Side-by-side content for specific sections */
-.side-by-side {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.side-by-side img {
-    flex: 1;
-}
-
-.side-by-side div {
-    flex: 2;
-}
-
-/* Additional section styling for category-based layout */
+/* Category sections styling */
 .category {
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: left;
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Image container for individual images under each category */
+.category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Image container styles */
 .image-container, .image-gallery {
     text-align: center;
 }
 
-.category-image {
-    max-width: 100%;
+.pet-image {
+    width: 90%; /* Reduce image size */
     height: auto;
     margin: 10px;
+    border-radius: 8px;
 }
 
-/* Gallery for two images side by side in category three */
+/* Gallery for images side by side */
 .image-gallery {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
-/* Style for individual images in the gallery */
+/* Style for individual images within the gallery */
 .image-gallery img {
     width: 45%;  /* Adjust width for the images to sit side by side */
+    height: auto;
 }
