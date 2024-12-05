@@ -5,13 +5,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
-/* Center all titles */
-.title {
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Arial', sans-serif;
+h1, h2, h3 {
+    margin-top: 10px;
 }
 
 /* Category sections styling */
@@ -23,37 +21,33 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling for individual category titles */
 .category h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+/* Paragraph styling */
 .category p {
     font-size: 16px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* Image container styles */
-.image-container, .image-gallery {
-    text-align: center;
-}
-
-.pet-image {
-    width: 90%; /* Reduce image size */
+.category-image {
+    max-width: 80%; /* Reducing the image size */
     height: auto;
-    margin: 10px;
-    border-radius: 8px;
+    margin: 10px auto;
 }
 
-/* Gallery for images side by side */
+/* Gallery for two images side by side */
 .image-gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 
-/* Style for individual images within the gallery */
 .image-gallery img {
     width: 45%;  /* Adjust width for the images to sit side by side */
-    height: auto;
 }
