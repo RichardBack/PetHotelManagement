@@ -3,51 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Dogs Cats Hotel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center; /* Center-aligns all content in the body */
-        }
-        header {
-            background-color: #f9f9f9;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 3em; /* Makes "The Dogs Cats Hotel" larger */
-            margin: 0;
-            color: #333;
-        }
-        h2 {
-            font-size: 1.5em; /* Adjusts size for "By Richard Backscheider" */
-            margin: 10px 0 0;
-            color: #555;
-        }
-        .images-container {
-            display: flex;
-            justify-content: center; /* Centers the images horizontally */
-            gap: 20px; /* Adds spacing between images */
-            margin: 20px 0;
-        }
-        .images-container img {
-            max-width: 300px;
-            height: auto;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
     <header>
-        <h1>The Dogs Cats Hotel</h1>
-        <h2>By Richard Backscheider</h2>
+        <h1>Welcome to My Portfolio</h1>
+        <p>My name is Richard. As a junior software developer at Global Rain, I have been involved in developing custom software for Pet Boarding and Grooming (PetBaG), focused on replacing outdated paper processes with a streamlined digital solution. The task includes crafting Java classes, drafting pseudocode, and devising flowcharts. The software structure adopts a hierarchical model, employing conditional logic to handle inputs and drive decision-making processes. Specifically, the Pet class and its Dog subclass are carefully designed to handle diverse functionalities tailored to different pet types, with the flexibility to implement ‘if/else’ statements as needed to navigate various scenarios efficiently. This approach ensures the software operates seamlessly, effectively meeting Pet BAG’s operational needs.</p>
     </header>
-    <div class="images-container">
-        <img src="image1.jpg" alt="Dog in the hotel">
-        <img src="image2.jpg" alt="Cat in the hotel">
-    </div>
+
+    <main>
+        <section>
+            <h2>Projects</h2>
+            <p>Pet Boarding and Grooming (Pet BAG) is developing software tailored to manage operations for dogs. The goal is to replace the outdated paper-based processes with efficient digital solutions. The system now handles essential functions such as dog check-in and check-out, pet management tasks, feeding schedules and yard times, and administrative features, including updating pet information and tracking payment statuses. It includes specialized capabilities like managing specialized services, available exclusively for pets staying two days or more. The software streamlines operations within the boarding facility, ensuring smooth processes from arrival to departure for all pet guests.</p>
+        </section>
+
+        <section>
+            <h2>Our Pet Hotel Rooms</h2>
+            <div>
+                <img src="images/cats_dogs_kennel.jpg" alt="Cats and Dogs Kennel" width="300">
+                <img src="images/dog_kennel.png" alt="Dog Kennel" width="300">
+                <img src="images/kitten_kennel.webp" alt="Kitten Kennel" width="300">
+                <img src="images/kennel_cottage.png" alt="Kennel Cottage" width="300">
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
