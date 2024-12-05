@@ -1,47 +1,35 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
+/* Center the titles */
+.title {
     text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
+    margin-top: 20px;
 }
 
-main {
-    padding: 20px;
-}
-
-.project {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #333;
+/* Style the sections */
+.section {
+    margin: 20px auto;
+    max-width: 800px;
     text-align: left;
 }
 
-p {
-    text-align: left;  /* Ensures text is left-aligned */
-}
-
+/* Style the images */
 img {
+    display: block;
+    margin: 10px auto;
     max-width: 100%;
     height: auto;
-    display: block;
-    margin-bottom: 20px;
 }
 
-/* Container to hold images side by side */
-.image-container {
+/* Side-by-side content for specific sections */
+.side-by-side {
     display: flex;
+    align-items: center;
     gap: 20px;
-    justify-content: flex-start;
 }
 
-.image-container img {
-    width: 48%;  /* Adjusts width of the images to fit side by side */
+.side-by-side img {
+    flex: 1;
+}
+
+.side-by-side div {
+    flex: 2;
 }
