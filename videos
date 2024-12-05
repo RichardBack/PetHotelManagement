@@ -1,0 +1,9 @@
+<section id="code-review-video">
+    <h2>Code Review</h2>
+    <h3>Module 2: Pet Hotel Management Project</h3>
+    <p>Below is a video review of the code for the Pet Hotel Management Project, where I discuss the structure, design decisions, and enhancements made during development.</p>
+    <video width="640" height="360" controls>
+        <source src="videos/Module_2_Pet_Hotel_Management_Project.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
