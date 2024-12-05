@@ -3,26 +3,29 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f0f0f0; /* Light background color */
     color: #333;
     line-height: 1.6;
+    text-align: center; /* Center text on the body */
 }
 
 /* Header Styles */
 header {
-    background-color: #007acc;
+    background-color: #007acc; /* Blue background for header */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger font size for the main title */
     margin: 0;
+    color: #ff6347; /* Tomato red for the main title */
 }
 
 header p {
     font-size: 1.2rem;
+    color: #8b4513; /* Saddle brown color for the author text */
 }
 
 /* Section Styles */
@@ -31,15 +34,34 @@ main {
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff; /* White background for each section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
 }
 
+/* Subheading (Category titles) */
 h2 {
-    color: #007acc;
+    font-size: 2.5rem; /* Adjusting the font size */
+    color: #4682b4; /* Steel blue for the subheadings */
+    margin-top: 10px;
 }
 
+/* Paragraph Styles */
 p {
+    font-size: 1.2rem;
     margin: 10px 0;
+    color: #555; /* Dark grey for the text */
+}
+
+/* Image Styling */
+img {
+    display: block; /* Ensure image is centered */
+    margin: 20px auto;
+    max-width: 50%; /* Limit image size to 50% */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
 }
 
 /* Project Section Styling */
@@ -53,7 +75,7 @@ p {
 
 .project h3 {
     margin-top: 0;
-    color: #0056b3;
+    color: #0056b3; /* Blue color for the project title */
 }
 
 .project p {
