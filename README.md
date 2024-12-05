@@ -20,8 +20,8 @@ The **Pet Hotel Management System** is one of my key projects that showcases my 
 - **Software Engineering**: Object-Oriented Programming (OOP), Design Patterns
 - **Database Management**: SQL, Data Structures
 
-## 💻 Check Out My Code
 
-You can view the full project and my other work on [GitHub](https://github.com/NewtonianLaw).
+## 💻 Check Out My Code  
+You can view the full project and my other work on GitHub: [Richard's GitHub - PetHotelManagement](https://github.com/RichardBack/PetHotelManagement)
 
 ![Richard's Profile](https://raw.githubusercontent.com/NewtonianLaw/NewtonianLaw.github.io/main/Github_Photo.jpg)
