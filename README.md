@@ -1,14 +1,14 @@
 # Hi, I'm Richard! 👨‍💻 Computer Scientist and Programmer
 
-Welcome to this ePortfolio! This showcases a **Computer Science graduate** from **Southern New Hampshire University**, with expertise in programming, problem-solving, and software engineering. Below is an overview of key skills, projects, and insights.
+Welcome to my ePortfolio! I am a **Computer Science graduate** from **Southern New Hampshire University**, with expertise in programming, problem-solving, and software engineering. Below is an overview of key skills, projects, and insights.
 
-## 📚 About
+## 📚 About Me
 
-A strong foundation in problem-solving, algorithms, and coding has been built throughout the Computer Science journey. Focus is on creating efficient, scalable software solutions while adapting to new programming languages.
+As a Comuter Science graduate, I have built a strong foundation in problem-solving, algorithms, and coding. I thrive on creating efficient, scalable software solutions while adapting to new programming languages.
 
 ## 🌟 Featured Project: **Pet Hotel Management System**
 
-The **Pet Hotel Management System** is a key project highlighting skills in **software engineering**, **algorithms**, and **database management**. Initially developed as a **Java-based system**, the project has evolved into a **Python-based solution** to manage both dogs and cats.
+The **Pet Hotel Management System** is a key project highlighting skills in **software engineering**, **algorithms**, and **database management**. Initially developed as a **Java-based system**, the project has evolved into a **Python-based solution** to manage both dogs and cats within **MySQL** database. This transition enables more efficient data handling and interaction with the database, leveraging Python's flexibility alongside MySQL's robust relational database management capabilities. The system maintains essential functionalities such as check-in/check-out processes, pet-specific services, and a structured database for storing information on each pet.
 
 ### Key Highlights:
 - **Java Implementation**: Core classes like `Pet`, `Dog`, and `Cat` were developed to manage pet information.
