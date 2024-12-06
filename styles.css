@@ -1,32 +1,3 @@
-/* General layout styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center; /* Keep the default center alignment for general text */
-}
-
-h1, h2, h3 {
-    margin-top: 10px;
-}
-
-/* Center all titles */
-.main-title {
-    text-align: center;
-    margin: 10px 0;
-    color: blue;  /* Set the color of titles to blue */
-}
-
-/* Center the 'By Richard' text */
-.by-author {
-    text-align: center;
-    font-style: italic;
-    margin-top: 20px;
-    color: maroon;  /* Set the color of 'By Richard' to maroon */
-}
-
 /* Category sections styling */
 .category {
     margin: 20px;
@@ -91,4 +62,17 @@ h1, h2, h3 {
     text-align: left; 
     display: block;
     margin-top: 10px;
+}
+
+/* Styling for the Code Review Video */
+#code-review-video {
+    margin: 30px auto;
+    text-align: center;
+}
+
+#code-review-video video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
 }
