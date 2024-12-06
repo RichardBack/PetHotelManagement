@@ -37,29 +37,6 @@ Below is a video that details the enhancements and discusses the design improvem
 
 [Watch the Enhancements Video - Software Engineering and Design](https://youtu.be/THa4Mwbl8nI)
 
-### 📂 Enhanced Code Files
-
-Each of the following files includes specific enhancements to **The Dogs Cats Hotel** system. Click on the links below to view or download the enhanced code.
-
-- **Main File - Main.java**: This is the updated main Java file for **The Dogs Cats Hotel**.  
-  [View/Download Main.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Main.java)
-
-- **Pets File - Pets, Dogs, Cats**: This includes the enhanced pet-related files for managing dogs and cats.  
-  [View/Download Pets, Dogs, Cats](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Pets.java)  
-  [View/Download Dogs](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Dogs.java)  
-  [View/Download Cats](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Cats.java)
-
-- **LinkedList File - LinkedList**: This file includes the enhanced linked list for managing pet data.  
-  [View/Download LinkedList.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/LinkedList.java)
-
-- **Nodes File**: This file contains the node structure for the linked list.  
-  [View/Download Nodes.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Nodes.java)
-
-- **Test Files - CatTest, DogTest, DecimalFormatTest**: These test files ensure the functionality of the enhancements made.  
-  [View/Download CatTest.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/CatTest.java)  
-  [View/Download DogTest.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/DogTest.java)  
-  [View/Download DecimalFormatTest.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/DecimalFormatTest.java)
-
 ### 🖥️ View the Original Code
 
 For comparison, you can explore the **original Pet Hotel Management** project code before the enhancements were applied:
