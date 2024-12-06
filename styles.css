@@ -1,4 +1,33 @@
-/* Category sections styling */
+/* General Styling for the Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light background for readability */
+    color: #333; /* Neutral text color */
+    line-height: 1.6; /* Improve text readability */
+}
+
+/* Header Section */
+header {
+    background-color: #004080; /* Dark blue header */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+/* Category Sections Styling */
 .category {
     margin: 20px;
     padding: 15px;
@@ -7,28 +36,28 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for individual category titles */
+/* Styling for Individual Category Titles */
 .category h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: blue;  /* Ensure category titles are blue */
+    color: blue; /* Ensure category titles are blue */
 }
 
-/* Paragraph styling */
+/* Paragraph Styling */
 .category p {
     font-size: 16px;
     margin-bottom: 20px;
     text-align: justify; /* Justify the text for readability */
 }
 
-/* Image container styles */
+/* Image Container Styles */
 .category-image {
     max-width: 80%; /* Reducing the image size */
     height: auto;
     margin: 10px auto;
 }
 
-/* Gallery for two images side by side */
+/* Gallery for Two Images Side by Side */
 .image-gallery {
     display: flex;
     justify-content: center;
@@ -36,7 +65,9 @@
 }
 
 .image-gallery img {
-    width: 45%;  /* Adjust width for the images to sit side by side */
+    width: 45%; /* Adjust width for the images to sit side by side */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* ePortfolio Section Styling: Left Align the Content */
@@ -48,7 +79,7 @@
 
 .eportfolio h2, .eportfolio h3 {
     text-align: left; /* Align titles to the left */
-    color: blue;  /* Keep the color consistent */
+    color: blue; /* Keep the color consistent */
 }
 
 .eportfolio p {
@@ -57,11 +88,17 @@
     margin-bottom: 20px;
 }
 
-/* Make sure links are left aligned as well */
+/* Make Sure Links are Left Aligned as Well */
 .eportfolio a {
-    text-align: left; 
+    text-align: left;
     display: block;
     margin-top: 10px;
+    color: #004080;
+    text-decoration: none;
+}
+
+.eportfolio a:hover {
+    text-decoration: underline;
 }
 
 /* Styling for the Code Review Video */
@@ -75,4 +112,20 @@
     height: auto;
     border: 2px solid #ddd;
     border-radius: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
