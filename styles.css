@@ -60,15 +60,18 @@ header p {
 /* Paragraph Styling */
 .category p {
     font-size: 16px;
+    line-height: 1.8; /* Increased line height for better readability */
     margin-bottom: 20px;
     text-align: justify; /* Justify the text for readability */
+    padding-right: 15px; /* Prevent text from running too close to the edge */
 }
 
 /* Image Container Styles */
 .category-image {
-    max-width: 50%; /* Reducing the image size */
-    height: auto;
-    margin: 10px auto;
+    display: block; /* Ensures the image is centered */
+    margin: 20px auto; /* Centers the image with some space above and below */
+    max-width: 80%; /* Makes sure images don't get too large */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Gallery for Two Images Side by Side */
@@ -76,12 +79,14 @@ header p {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Allows for wrapping on smaller screens */
 }
 
 .image-gallery img {
-    width: 40%; /* Adjust width for the images to sit side by side */
+    width: 45%; /* Adjust width for images to sit side by side */
     border-radius: 8px; /* Rounded corners for a modern look */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Ensures responsive scaling */
 }
 
 /* ePortfolio Section Styling: Left Align the Content */
