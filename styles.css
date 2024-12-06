@@ -70,7 +70,7 @@ header p {
 .category-image {
     display: block; /* Ensures the image is centered */
     margin: 20px auto; /* Centers the image with some space above and below */
-    max-width: 80%; /* Makes sure images don't get too large */
+    max-width: 60%; /* Reduces the image width to 60% of its container */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -83,7 +83,7 @@ header p {
 }
 
 .image-gallery img {
-    width: 45%; /* Adjust width for images to sit side by side */
+    width: 40%; /* Adjust width for images to sit side by side, smaller width for more room */
     border-radius: 8px; /* Rounded corners for a modern look */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     max-width: 100%; /* Ensures responsive scaling */
