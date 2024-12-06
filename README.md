@@ -15,6 +15,12 @@ The **Pet Hotel Management System** is a key project highlighting skills in **so
 - **Python Adaptation**: The system was transitioned to Python, enhancing code readability and flexibility.
 - **Database Integration**: Advanced data structures, such as `Node` and `PetLinkedList`, were used for efficient pet record management.
 
+### Original Java Code: Pet Hotel Management (PETBag)
+
+Click below to view the original **Java-based Pet Hotel Management System (PETBag)** code before any changes were made:
+
+[View the Original Java Code: Pet Hotel Management (PETBag).java](https://github.com/RichardBack/PetHotelManagement/blob/main/CS145%20Pet%20Hotel%20Management%20(PETBag).java)
+
 ## 🎬 Code Review Video
 
 Below is a video walkthrough of the **original Java-based Pet Hotel Management System (PETBag)** code. The video provides an overview of the code, showcasing its structure, features, and limitations. Suggestions for improvement are offered, highlighting areas for optimization in scalability, performance, and readability.
