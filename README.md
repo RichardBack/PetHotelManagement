@@ -27,6 +27,45 @@ Below is a video walkthrough of the **original Java-based Pet Hotel Management S
 
 🔗 [Watch the Code Review Video - Java Code Review](https://youtu.be/0b_1pya0T1Y)
 
+## 📂 Category One: Computer Engineering and Design
+
+This section covers the enhancements made to the **Pet Hotel Management System**, which was renamed **The Dogs Cats Hotel**. These updates highlight the improvements in system structure, scalability, and performance based on **Software Engineering and Design** principles.
+
+### 🎬 Watch the Enhancement Video
+
+Below is a video that details the enhancements and discusses the design improvements in the **The Dogs Cats Hotel** system:
+
+[Watch the Enhancements Video - Software Engineering and Design](https://youtu.be/THa4Mwbl8nI)
+
+### 📂 Enhanced Code Files
+
+Each of the following files includes specific enhancements to **The Dogs Cats Hotel** system. Click on the links below to view or download the enhanced code.
+
+- **Main File - Main.java**: This is the updated main Java file for **The Dogs Cats Hotel**.  
+  [View/Download Main.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Main.java)
+
+- **Pets File - Pets, Dogs, Cats**: This includes the enhanced pet-related files for managing dogs and cats.  
+  [View/Download Pets, Dogs, Cats](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Pets.java)  
+  [View/Download Dogs](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Dogs.java)  
+  [View/Download Cats](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Cats.java)
+
+- **LinkedList File - LinkedList**: This file includes the enhanced linked list for managing pet data.  
+  [View/Download LinkedList.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/LinkedList.java)
+
+- **Nodes File**: This file contains the node structure for the linked list.  
+  [View/Download Nodes.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/Nodes.java)
+
+- **Test Files - CatTest, DogTest, DecimalFormatTest**: These test files ensure the functionality of the enhancements made.  
+  [View/Download CatTest.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/CatTest.java)  
+  [View/Download DogTest.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/DogTest.java)  
+  [View/Download DecimalFormatTest.java](https://github.com/RichardBack/PetHotelManagement/blob/main/thedogscatshotel/DecimalFormatTest.java)
+
+### 🖥️ View the Original Code
+
+For comparison, you can explore the **original Pet Hotel Management** project code before the enhancements were applied:
+
+[View the Original Java Code: The Pet Hotel Management](https://github.com/RichardBack/PetHotelManagement/blob/main/IT-145PetHotelManagement.txt)
+
 ## 🎯 Key Skills
 - **Programming Languages**: Java, Python, C++, HTML/CSS, JavaScript
 - **Software Engineering**: Object-Oriented Programming (OOP), Design Patterns
