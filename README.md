@@ -19,7 +19,7 @@ The **Pet Hotel Management System** is a key project highlighting skills in **so
 
 Below is a video walkthrough of the **original Java-based Pet Hotel Management System (PETBag)** code. The video provides an overview of the code, showcasing its structure, features, and limitations. Suggestions for improvement are offered, highlighting areas for optimization in scalability, performance, and readability.
 
-🔗 [Watch the Code Review Video - Java Code Review](https://example.com/pet-hotel-code-review)
+🔗 [Watch the Code Review Video - Java Code Review](https://www.youtube.com/watch?v=your_video_id)
 
 ## 🎯 Key Skills
 - **Programming Languages**: Java, Python, C++, HTML/CSS, JavaScript
