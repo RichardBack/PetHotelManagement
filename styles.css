@@ -79,7 +79,7 @@ header p {
 }
 
 .image-gallery img {
-    width: 45%; /* Adjust width for the images to sit side by side */
+    width: 40%; /* Adjust width for the images to sit side by side */
     border-radius: 8px; /* Rounded corners for a modern look */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
