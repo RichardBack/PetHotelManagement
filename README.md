@@ -37,6 +37,20 @@ Below is a video that details the enhancements and discusses the design improvem
 
 [Watch the Enhancements Video - Software Engineering and Design](https://youtu.be/THa4Mwbl8nI)
 
+## 📂 Category Two: Algorithms and Data Structures
+
+This section highlights the enhancements made to the **Pet Hotel Management System**, renamed to **The Dogs Cats Hotel**. These updates focus on the utilization of advanced algorithms and data structures to improve system efficiency, scalability, and performance. The changes demonstrate how tailored algorithms and well-designed data structures streamline operations and enhance the user experience.
+
+🎬 **Watch the Enhancement Video**  
+Below is a video that showcases the improvements in algorithms and data structures within **The Dogs Cats Hotel** system:
+
+[Watch the Enhancements Video - Algorithms and Data Structures](https://youtu.be/z4FT6d7N8iI)
+
+🎬 Watch the Database Enhancements Video
+Below is a video that highlights the database architecture improvements and demonstrates the enhanced database operations in the The Dogs Cats Hotel system:
+
+[Watch the Enhancements Video - Databases](#).
+
 ## 🎯 Key Skills
 - **Programming Languages**: Java, Python, C++, HTML/CSS, JavaScript
 - **Software Engineering**: Object-Oriented Programming (OOP), Design Patterns
