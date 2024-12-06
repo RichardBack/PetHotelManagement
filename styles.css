@@ -37,6 +37,10 @@ header p {
     margin: 0;
 }
 
+.center-text .main-title {
+    margin: 0;
+}
+
 /* Category Sections Styling */
 .category {
     margin: 20px;
