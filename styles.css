@@ -27,6 +27,16 @@ header p {
     margin: 5px 0 0;
 }
 
+/* Centered Titles Section */
+.center-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.center-text h1, .center-text h2, .center-text h3 {
+    margin: 0;
+}
+
 /* Category Sections Styling */
 .category {
     margin: 20px;
@@ -128,4 +138,24 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
+}
+
+/* Styling for Buttons */
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
