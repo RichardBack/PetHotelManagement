@@ -19,7 +19,7 @@ The **Pet Hotel Management System** is a key project highlighting skills in **so
 
 Click below to view the original **Java-based Pet Hotel Management System (PETBag)** code before any changes were made:
 
-[View the Original Java Code: Pet Hotel Management (PETBag).java](https://github.com/RichardBack/PetHotelManagement/blob/main/CS145%20Pet%20Hotel%20Management%20(PETBag).java)
+[View the Original Code: IT-145 Pet Hotel Management.txt](https://raw.githubusercontent.com/RichardBack/PetHotelManagement/main/IT-145%20Pet%20Hotel%20Management.txt)
 
 ## 🎬 Code Review Video
 
