@@ -37,12 +37,6 @@ Below is a video that details the enhancements and discusses the design improvem
 
 [Watch the Enhancements Video - Software Engineering and Design](https://youtu.be/THa4Mwbl8nI)
 
-### 🖥️ View the Original Code
-
-For comparison, you can explore the **original Pet Hotel Management** project code before the enhancements were applied:
-
-[View the Original Java Code: The Pet Hotel Management](https://github.com/RichardBack/PetHotelManagement/blob/main/IT-145PetHotelManagement.txt)
-
 ## 🎯 Key Skills
 - **Programming Languages**: Java, Python, C++, HTML/CSS, JavaScript
 - **Software Engineering**: Object-Oriented Programming (OOP), Design Patterns
