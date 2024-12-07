@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Hotel Management</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer>
+        function toggleDetails(id) {
+           const detailsSection = document.getElementById(id);
+           const isHidden = detailsSection.style.display === 'none';
+           detailsSection.style.display = isHidden ? 'block' : 'none';
+
+           const button = document.querySelector(`button[aria-controls="${id}"]`);
+           if (button) {
+                button.setAttribute('aria-expanded', isHidden);
+            }
+        }
+    </script>
 </head>
+
 <body>
     <!-- Header with Navigation -->
     <header>
@@ -93,31 +106,25 @@
 <!-- Category 3 -->
 <section class="category" id="category-three">
     <h2>Category Three: Databases</h2>
-    <p>The chosen artifact for category three focuses on database integration. The transition to MySQL allowed seamless management of reservations, check-ins, and check-outs. A normalized database structure was designed to prevent redundancy and improve data integrity. The integration ensured real-time updates, enabling the staff to retrieve and manage data effectively. Furthermore, indexing strategies were used to enhance the performance of queries, resulting in faster operations even during peak hours.</p>
-    
-    <div class="image-gallery">
-        <img src="images/kitten_kennel.webp" alt="Kitten Kennel" class="category-image">
-        <img src="images/kennel_cottage.png" alt="Kennel Cottage" class="category-image">
-    </div>
+       <p>The chosen artifact for category three focuses on database integration. The transition to MySQL allowed seamless management of reservations, check-ins, and check-outs. A normalized database structure was designed to prevent redundancy and improve data integrity. The integration ensured real-time updates, enabling the staff to retrieve and manage data effectively. Furthermore, indexing strategies were used to enhance the performance of queries, resulting in faster operations even during peak hours.</p>
     
     <!-- Toggle Button for Category Three -->
     <button onclick="toggleDetails('details-category-three')" class="toggle-button">View Details</button>
-    
-     <!-- Expandable Details Section for Category Three -->
+
+    <!-- Expandable Details Section for Category Three -->
     <div id="details-category-three" class="details-section" style="display: none;">
-        <h3>Enhancements to The Pet Hotel Management System</h3>
+        <h3>Enhancements to The Database System</h3>
         <ul>
-            <li><strong>MySQL Database Integration:</strong> Integrated a MySQL relational database to manage pet details, customer information, bookings, and payments efficiently. Designed a relational schema and established appropriate relationships between tables like ‘Pets,’ ‘Customers,’ ‘Bookings,’ and ‘Payments’.</li>
-            <li><strong>Database Schema Design:</strong> Designed a well-structured database schema to handle pet hotel data, ensuring normalization, scalability, and efficient querying for data retrieval and management.</li>
-            <li><strong>MySQL Integration (Python):</strong> Implemented MySQL integration to connect the Python-based Pet Hotel Management system with the MySQL database. Developed a <strong>DatabaseManager</strong> class to handle CRUD operations in the <strong>Pet</strong> class, ensuring proper database interaction and efficient data management.</li>
-            <li><strong>Performance Optimization:</strong> Optimized database queries for efficient data retrieval and ensured smooth application performance, even with large datasets.</li>
-            <li><strong>Deployment and Maintenance:</strong> Deployed the application to production and implemented monitoring for database performance, ensuring continuous scalability and reliability. Addressed necessary optimizations for long-term maintenance.</li>
+            <li><strong>Database Normalization:</strong> Implemented a normalized relational database to eliminate redundancy and ensure data integrity.</li>
+            <li><strong>Indexing Strategies:</strong> Designed efficient indexing for high-priority queries, resulting in faster data retrieval.</li>
+            <li><strong>Integration with Frontend:</strong> Seamlessly integrated the MySQL database with the application backend, allowing real-time updates and data synchronization.</li>
+            <li><strong>Scalability:</strong> Prepared the database for future growth, ensuring that it can handle increased data volumes and additional functionalities.</li>
+            <li><strong>Security Measures:</strong> Enhanced security by implementing user roles, privileges, and encrypted connections for sensitive data.</li>
         </ul>
         
         <h3>🎬 Watch the Enhancement Video for Category Three</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7XpiSde4HZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder-link" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-</section>
 
     <!-- ePortfolio Section -->
 <section class="eportfolio">
@@ -137,8 +144,9 @@
         
      <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Richard</p>
-    </footer>
+    <p>&copy; 2024 The Dogs Cats Hotel | Created by Richard</p>
+    <p>Contact: <a href="mailto:richard@example.com">richard@example.com</a></p>
+</footer>
 
     <script>
         function toggleDetails(id) {
