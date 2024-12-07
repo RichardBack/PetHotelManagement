@@ -50,14 +50,12 @@ header p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for Individual Category Titles */
 .category h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: blue; /* Ensure category titles are blue */
 }
 
-/* Paragraph Styling */
 .category p {
     font-size: 16px;
     line-height: 1.8; /* Increased line height for better readability */
@@ -87,6 +85,32 @@ header p {
     border-radius: 8px; /* Rounded corners for a modern look */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     max-width: 100%; /* Ensures responsive scaling */
+}
+
+/* New Details Section and Toggle Button Styles */
+.details-section {
+    display: none; /* Hide details by default */
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.toggle-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.toggle-button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
 
 /* ePortfolio Section Styling: Left Align the Content */
@@ -167,30 +191,4 @@ button a {
 
 button:hover {
     background-color: #0056b3;
-}
-
-/* Toggle Button */
-.toggle-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.toggle-button:hover {
-    background-color: #0056b3;
-}
-
-/* Details Section */
-.details-section {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: all 0.3s ease;
 }
