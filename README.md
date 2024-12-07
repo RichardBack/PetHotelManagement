@@ -80,7 +80,7 @@ These improvements collectively provide a reliable, scalable, and secure databas
 🎬 Watch the Database Enhancements Video
 Below is a video that highlights the database architecture improvements and demonstrates the enhanced database operations in the The Dogs Cats Hotel system:
 
-[Watch the Enhancements Video - Databases]([#](https://youtu.be/7XpiSde4HZs)).
+[Watch the Enhancements Video - Databases](https://youtu.be/7XpiSde4HZs).
 
 ## 🎯 Key Skills
 - **Programming Languages**: Java, Python, C++, HTML/CSS, JavaScript
