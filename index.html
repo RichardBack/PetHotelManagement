@@ -61,7 +61,6 @@
     <button onclick="toggleDetails('details-category-two')" class="toggle-button">View Details</button>
 
     <!-- Expandable Details Section -->
-    <button onclick="toggleDetails('details-category-two')" class="toggle-button">View Details</button>
     <div id="details-category-two" class="details-section" style="display: none;">
     <h3>Enhancements to The Dogs Cats Hotel</h3>
     <ul>
@@ -80,7 +79,7 @@
     </div>
 </section>
 
-   <!-- Category 3 -->
+<!-- Category 3 -->
 <section class="category" id="category-three">
     <h2>Category Three: Databases</h2>
     <p>The chosen artifact for category three focuses on database integration. The transition to MySQL allowed seamless management of reservations, check-ins, and check-outs. A normalized database structure was designed to prevent redundancy and improve data integrity. The integration ensured real-time updates, enabling the staff to retrieve and manage data effectively. Furthermore, indexing strategies were used to enhance the performance of queries, resulting in faster operations even during peak hours.</p>
@@ -93,7 +92,6 @@
     <button onclick="toggleDetails('details-category-three')" class="toggle-button">View Details</button>
 
     <!-- Expandable Details Section -->
-    <button onclick="toggleDetails('details-category-two')" class="toggle-button">View Details</button>
     <div id="details-category-three" class="details-section" style="display: none;">
         <h3>Enhancements to The Dogs Cats Hotel</h3>
         <ul>
@@ -102,7 +100,6 @@
             <li>Improved Maintainability: Added documentation and streamlined code formatting.</li>
             <li>Error Handling: Implemented robust error handling to reduce failures.</li>
         </ul>
-
         <h3>🎬 Watch the Enhancement Video for Category Three</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7XpiSde4HZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
@@ -138,15 +135,18 @@
         <a href="https://github.com/NewtonianLaw/NewtonianLaw.github.io/blob/main/README.md" target="_blank">View my README file</a>
     </section>
 
-    <script>
-        function toggleDetails(id) {
-            const section = document.getElementById(id);
-            section.style.display = (section.style.display === "none") ? "block" : "none";
-        }
-    </script>
-
+     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Richard</p>
     </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const section = document.getElementById(id);
+            if (section) {
+                section.style.display = section.style.display === "none" ? "block" : "none";
+            }
+        }
+    </script>
 </body>
 </html>
