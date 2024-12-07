@@ -29,7 +29,18 @@ Below is a video walkthrough of the **original Java-based Pet Hotel Management S
 
 ## 📂 Category One: Computer Engineering and Design
 
-This section covers the enhancements made to the **Pet Hotel Management System**, which was renamed **The Dogs Cats Hotel**. These updates highlight the improvements in system structure, scalability, and performance based on **Software Engineering and Design** principles.
+This section covers the enhancements made to the **Pet Hotel Management System**, renamed to **The Dogs Cats Hotel**. These updates highlight improvements in system structure, scalability, and performance based on **Software Engineering and Design** principles.  
+
+The enhancements include:  
+- **Redesigned System Architecture**: Transitioned from a monolithic structure to a modular design, improving system flexibility and ease of maintenance.  
+- **Use of Design Patterns**: Applied patterns such as MVC (Model-View-Controller) and Singleton to ensure clean separation of concerns and efficient resource management.  
+- **Scalable Codebase**: Optimized the code structure to handle increased functionality, ensuring adaptability to future requirements.  
+- **Service-Oriented Features**: Enhanced the system to manage a broader range of services, including grooming and extended stay options, tailored to customer needs.  
+- **Error Handling and Robustness**: Implemented comprehensive error-handling mechanisms to improve system stability and reduce unexpected failures.  
+- **Enhanced Data Validation**: Integrated stricter input validation rules to prevent erroneous data from compromising system integrity.  
+- **Improved Maintainability**: Introduced clear documentation and streamlined code formatting, making the system easier to understand and extend.  
+
+These enhancements ensure the system meets modern software engineering standards, offering a reliable, efficient, and user-friendly experience for both pet owners and administrators.  
 
 ### 🎬 Watch the Enhancement Video
 
@@ -41,10 +52,30 @@ Below is a video that details the enhancements and discusses the design improvem
 
 This section highlights the enhancements made to the **Pet Hotel Management System**, renamed to **The Dogs Cats Hotel**. These updates focus on the utilization of advanced algorithms and data structures to improve system efficiency, scalability, and performance. The changes demonstrate how tailored algorithms and well-designed data structures streamline operations and enhance the user experience.
 
+The enhancements include:
+- **Optimized Search Algorithms**: Improved search capabilities using techniques like binary search to quickly locate pet records and services within large datasets.
+- **Sorting Mechanisms**: Implemented efficient sorting algorithms to organize pet records by criteria such as check-in dates, service priorities, or owner names.
+- **Custom Data Structures**: Designed and integrated specialized data structures like linked lists and nodes to manage pet information dynamically and efficiently.
+- **Memory Efficiency**: Enhanced memory utilization by adopting algorithms and data structures optimized for space complexity.
+- **Error Handling in Algorithms**: Incorporated robust error-handling techniques to ensure the system performs reliably during high-load scenarios or unexpected inputs.
+
+These improvements collectively enable faster data processing, seamless scaling of the system, and an enhanced user experience for both administrators and pet owners.
+
 🎬 **Watch the Enhancement Video**  
 Below is a video that showcases the improvements in algorithms and data structures within **The Dogs Cats Hotel** system:
 
 [Watch the Enhancements Video - Algorithms and Data Structures](https://youtu.be/z4FT6d7N8iI)
+
+## 📂 Category Three: Databases
+
+This section focuses on the database enhancements implemented in the **Pet Hotel Management System**, now known as **The Dogs Cats Hotel**. These updates showcase the integration of robust database solutions to manage pet data effectively, improve data integrity, and enhance system reliability.
+
+The enhancements include:
+- **Streamlined Data Models**: Designed to support scalability and efficient data access.
+- **Improved Database Queries**: Optimized for faster retrieval of pet and service records.
+- **Implementation of Security Features**: Safeguards sensitive information such as payment statuses and client details.
+
+These improvements collectively provide a reliable, scalable, and secure database infrastructure that underpins the functionality and user experience of The Dogs Cats Hotel system.
 
 🎬 Watch the Database Enhancements Video
 Below is a video that highlights the database architecture improvements and demonstrates the enhanced database operations in the The Dogs Cats Hotel system:
