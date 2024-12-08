@@ -1,0 +1,134 @@
+ /**
+ * 
+ * Author: Richard Backscheider
+
+ * 
+ * Date: November 17, 2024
+ * 
+ * Intent: The 'Pet' class manages pet information within the hotel system, it encapsulates several shared attributes such 
+ * as type, age, owner details and days the pet will be staying. The class supports the subclasses 'Dog' and 'Cat' by implementing 
+ * specialties like grooming costs. By using encapsulation, formatted outputs, and 'java.time' for date handling,
+ * which integrates into a streamlined robust system, enabling extensive booking and invoicing. 
+ * 
+ * Decisions: The class is part of the 'dogscatshotel' project, representing the integration of both dogs and cats management 
+ * within a consolidated system. The name of the project has been revised from 'PetHotelManagement' to 'thedogscatshotel', which 
+ * now includes both dogs and cats. Attributes and behaviors are generalized in the base class and specialized in subclasses for 
+ * scalability and flexibility. The Pet.java class represents a pet in 'thedogscatshotel' file. The 'Pet' class relies on subclasses 
+ * to provide functionality, for items such as boarding and grooming costs.
+ * 
+ * Dependencies: 
+ * java.time.LocalData; Enables handling for check-in and check-out dates
+ * java.time.format.DateTimeFormatter; Enables aid for formatting dates.
+ * 
+ */
+
+package thedogscatshotel.pets;
+
+//Import needed packages
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public abstract class Pet {
+	
+	// Pet details
+	private String petType;          // Type of pet (Dog or Cat)
+    private String petName;          // Name of pet
+    private int ageInYears;          // Age of pet in years
+    private int ageInMonths;         // Age of pet in months
+    private String size;             // Size of pet (i.e. small, medium large, x-large)
+    
+    // Pet boarding details
+    private int petSpace;            // Boarding space number assigned to pet
+    private int daysStay;            // Number of days pet will be boarding
+    private double amountDue;        // Cost of boarding 
+    private boolean needsGrooming;   // Does the pet need grooming
+    
+    // Pet owner information
+    private String ownerFirstName;    // Pet owners first name
+    private String ownerLastName;     // Pet owners last name
+    private String address;           // Pet owners physical address
+    private String city;              // Pet owners city
+    private String state;             // Pet owners state
+    private String zipCode;           // Pet owners zip code
+    private String phoneNumber;       // Pet owners telephone number (landline or cell)
+    
+    // Stay schedule
+    private LocalDate checkInDate;    // Pet check-in date
+    private LocalDate checkOutDate;   // Pet check-out date
+
+    public Pet(String petType, String petName, int ageInYears, int ageInMonths, String size, int petSpace, int daysStay, double amountDue,
+               boolean needsGrooming, String ownerFirstName, String ownerLastName, String address, String city, String state,
+               String zipCode, String phoneNumber, LocalDate checkInDate, LocalDate checkOutDate) {
+        this.petType = petType;
+        this.petName = petName;
+        this.ageInYears = ageInYears;
+        this.ageInMonths = ageInMonths;
+        this.size = size;
+        this.petSpace = petSpace;
+        this.daysStay = daysStay;
+        this.amountDue = amountDue;
+        this.needsGrooming = needsGrooming;
+        this.ownerFirstName = ownerFirstName;
+        this.ownerLastName = ownerLastName;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zipCode = zipCode;
+        this.phoneNumber = phoneNumber;
+        this.checkInDate = checkInDate;
+        this.checkOutDate = checkOutDate;
+    }
+
+    // Getters used for accessing private attributes
+    public String getPetType() { return petType; }
+    public String getPetName() { return petName; }
+    public int getAgeInYears() { return ageInYears; }
+    public int getAgeInMonths() { return ageInMonths; }
+    public String getSize() { return size; }
+    public int getPetSpace() { return petSpace; }
+    public int getDaysStay() { return daysStay; }
+    public double getAmountDue() { return amountDue; }
+    public boolean isNeedsGrooming() { return needsGrooming; }
+    public String getOwnerFirstName() { return ownerFirstName; }
+    public String getOwnerLastName() { return ownerLastName; }
+    public String getAddress() { return address; }
+    public String getCity() { return city; }
+    public String getState() { return state; }
+    public String getZipCode() { return zipCode; }
+    public String getPhoneNumber() { return phoneNumber; }
+    public LocalDate getCheckInDate() { return checkInDate; }
+    public LocalDate getCheckOutDate() { return checkOutDate; }
+
+    // Abstract method to be implemented by subclasses, aids in calculating grooming costs
+    public abstract double getGroomingCost();
+
+    // Method to get the pet's full information in a formatted way
+    public String getPetInfo() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, yyyy");
+
+        return String.format("========== Pet Information ========== \n\n" +
+                             "Pet Type: %s\n" +
+                             "Pet Name: %s\n" +
+                             "Age: %d years, %d months\n" +
+                             "Size: %s\n" +
+                             "Pet Space: %d\n" +
+                             "Days Stay: %d\n\n" +
+                             "Owner: %s %s\n" +
+                             "Address: %s\n" +
+                             "City: %s\n" +
+                             "State: %s\n" +
+                             "Zip Code: %s\n" +
+                             "Phone: %s\n\n" +
+                             "========================================\n" +
+                             "Check-in Date: %s\n" +
+                             "Check-out Date: %s\n" +
+                             "========================================\n" +
+                             "Amount Due for Boarding: $%.2f\n" +
+                             "Grooming Cost: $%.2f\n" +
+                             "Total Cost: $%.2f\n",
+                             petType, petName, ageInYears, ageInMonths, size, petSpace, daysStay,
+                             ownerFirstName, ownerLastName, address, city, state, zipCode, phoneNumber,
+                             checkInDate.format(formatter), checkOutDate.format(formatter),
+                             amountDue, getGroomingCost(), amountDue + getGroomingCost());
+    }
+}

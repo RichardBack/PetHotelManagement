@@ -1,0 +1,149 @@
+ /**
+ * 
+ * Author: Richard Backscheider
+
+ * 
+ * Date: November 17, 2024
+ * 
+ * Intent: The 'DogTest' class, tests the creation and display of 'cat' and 'dog' objects with 
+ * various attributes, simulating pets' 'check-ins' and 'check-outs' at the hotel. The class
+ * ensures the system process pet data correctly.
+ *  
+ * Decisions: Within the 'test' class various 'cat' and 'dog' objects are created with diverse 
+ * attributes to test the system's ability to handle different pet types and information.
+ * This helps to validate the functionality of the pet management system.
+ * 
+ * Dependencies: 
+ * java.time.LocalData; Enables handling for check-in and check-out dates
+ * 
+ */
+
+package thedogscatshotel.test;
+
+//Import needed packages
+import java.time.LocalDate;
+
+import thedogscatshotel.pets.Cat;
+import thedogscatshotel.pets.Dog;
+
+public class DogTest {
+    public static void main(String[] args) {
+        // Define the check-in and check-out dates
+        LocalDate checkInDate = LocalDate.of(2024, 9, 1);
+        LocalDate checkOutDate = LocalDate.of(2024, 9, 6);
+
+        // Creating sample Cat and Dog objects with various attributes
+        Cat myCat = new Cat(
+            "Cat",          // Pet Type
+            "Saki",         // Pet Name
+            0,              // Age in years
+            6,              // Age in months
+            "Small",        // Pet Size
+            101,            // Pet space (room number)
+            5,              // Days stay
+            110.0,          // Amount due
+            true,           // Requires grooming
+            "Kitty",        // Owner's first name
+            "Katz",         // Owner's last name
+            "1953 Meow Ave", // Address
+            "Catskill",     // City
+            "New York",     // State
+            "12345",        // Zip code
+            "555-1414",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        Dog myDog = new Dog(
+            "Dog",          // Pet Type
+            "Nami",         // Pet Name
+            0,              // Age in years
+            7,              // Age in months
+            "Extra-Large",  // Pet Size
+            102,            // Pet space (room number)
+            7,              // Days stay
+            200.0,          // Amount due
+            true,           // Requires grooming
+            "Yosemite",     // Owner's first name
+            "Sam",          // Owner's last name
+            "1313 Rascally Dog Rd", // Address
+            "Rottweiler",   // City
+            "Canada",       // State
+            "M5V 3L9",      // Zip code
+            "444-1212",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        // Creating additional Dog objects
+        Dog dogKennedy = new Dog(
+            "Dog",          // Pet Type
+            "Kennedy",      // Pet Name
+            11,             // Age in years
+            4,              // Age in months
+            "Medium",       // Pet Size
+            103,            // Pet space (room number)
+            10,             // Days stay
+            200.0,          // Amount due
+            true,           // Requires grooming
+            "GoodDay",      // Owner's first name
+            "Mate",         // Owner's last name
+            "Kangaroo Lane", // Address
+            "Perth",        // City
+            "Australia",    // State
+            "6000",         // Zip code
+            "497-1234",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        Dog dogLucie = new Dog(
+            "Dog",          // Pet Type
+            "Lucie",        // Pet Name
+            0,              // Age in years
+            5,              // Age in months
+            "Medium",       // Pet Size
+            104,            // Pet space (room number)
+            6,              // Days stay
+            140.0,          // Amount due
+            true,           // Requires grooming
+            "Barnyard",     // Owner's first name
+            "Dawg",         // Owner's last name
+            "1212 Barnyard Blvd", // Address
+            "Old English Sheepdog", // City
+            "England",      // State
+            "22233",        // Zip code
+            "777-6161",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        Cat catMaribel = new Cat(
+            "Cat",          // Pet Type
+            "Maribel",      // Pet Name
+            2,              // Age in years
+            5,              // Age in months
+            "Medium",       // Pet Size
+            105,            // Pet space (room number)
+            3,              // Days stay
+            200.0,          // Amount due
+            false,          // Requires grooming
+            "Granny",       // Owner's first name
+            "Sylvester",    // Owner's last name
+            "987 LooneyToon Lane", // Address
+            "Scottish Fold", // City
+            "VT",           // State
+            "12345",        // Zip code
+            "565-7289",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        // Print the information for each pet
+        System.out.println(myCat.getPetInfo());
+        System.out.println(myDog.getPetInfo());
+        System.out.println(dogKennedy.getPetInfo());
+        System.out.println(dogLucie.getPetInfo());
+        System.out.println(catMaribel.getPetInfo());
+    }
+}

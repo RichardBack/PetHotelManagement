@@ -1,0 +1,87 @@
+/**
+ * 
+ * Author: Richard Backscheider
+ * 
+ * Date: November 17, 2024
+ * 
+ * Intent: The 'LinkedList' class implements a singly linked list to manage a collection of 'Pet' objects within the 
+ * 'Dogs and Cats' Hotel system by utilizing a linked list data structure. The linked list class enables the ability 
+ * to add, remove and list pets, aiding in operations for consistent managing of pets in the 'thedogscatshotel' system. 
+ * The linked list ensures efficient insertion and removal of pets, as well as easy traversal for displaying information.
+ * 
+ * Decisions: The use of a single linked list was to enable the ability for seamless addition and removal of pets without 
+ * the need to resize an array. The structure  * of the linked list allows for fast insertion at the end of the list and 
+ * easy removal from the head or middle, making it well-suited for scenarios where the number of pets can
+ * grow or shrink dynamically. Traversal of the list is straightforward for displaying pet information.
+ * 
+ * Dependencies: 
+ * java.time.LocalData; Enables handling for check-in and check-out dates
+ * java.time.format.DateTimeFormatter; Enables aid for formatting dates.
+ * 
+ */
+
+package thedogscatshotel.linkedlist;
+
+//Import needed packages
+import thedogscatshotel.pets.Pet;
+
+public class LinkedList {
+    private Node head;  // Head node of the linked, representing the first pet in the list
+
+    // Constructor to initialize an empty linked list
+    public LinkedList() {
+        head = null;
+    }
+
+    // Method to add a pet to the linked list
+    public void addPet(Pet pet) {
+        if (pet == null) {
+            throw new IllegalArgumentException("Pet cannot be null");
+        }
+        Node newNode = new Node(pet);  // Create a new node with the given pet
+        if (head == null) {
+            head = newNode;  // If list is empty, set the new node as head
+        } else {
+            Node current = head;
+            // Traverse to the end of the list
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(newNode);  // Set the new node as the next node of the last node
+        }
+    }
+
+    // Method to remove a pet from the linked list by name
+    public boolean remove(String petName) {
+        if (petName == null || head == null) return false;  // Check for invalid inputs
+
+        // Check if the head node needs to be removed
+        if (head.getPet().getPetName().equals(petName)) {
+            head = head.getNext();  // Move the head to the next node
+            return true;
+        }
+
+        Node current = head;
+        // Traverse the list to find the node to remove
+        while (current.getNext() != null && !current.getNext().getPet().getPetName().equals(petName)) {
+            current = current.getNext();
+        }
+
+        // If the node was not found
+        if (current.getNext() == null) return false;
+
+        // Skip the node to be removed
+        current.setNext(current.getNext().getNext());
+        return true;
+    }
+
+    // Method to list all pets in the linked list
+    public void listAllPets() {
+        Node current = head;
+        // Traverse the list and print each pet's information
+        while (current != null) {
+            System.out.println(current.getPet().getPetInfo());
+            current = current.getNext();
+        }
+    }
+}

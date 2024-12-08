@@ -1,0 +1,95 @@
+/**
+ * 
+ * Author: Richard Backscheider
+
+ * 
+ * Date: November 17, 2024
+ * 
+ * Intent: The 'Cat' class extends the 'Pet' class to represent a 'cat' in the pet hotel system. 
+ * It creates a customized grooming cost calculation based on cats size and duration of stay, overriding the 
+ * 'getPetInfo()' method to include detailed, formatted information about the cat, boarding and grooming costs,
+ * as well as owner and duration of stay information.
+ * 
+ * Decisions: The 'Cat' class extends the 'Pet' class, reprsenting a cat in the hotel system. It includes:
+ * a constructor to initialize the cat's details (i.e. name, age, size, owner information, checkin/checkout dates)
+ * a method to calculate grooming costs based on size if grooming is needed
+ * a method to return a formatted string with detailed pet information, including costs and dates
+ * 
+ * Dependencies: 
+ * java.time.LocalData; Enables handling for check-in and check-out dates
+ * java.time.format.DateTimeFormatter; Enables aid for formatting dates.
+ * 
+ */
+
+package thedogscatshotel.pets;
+
+// Import needed packages
+import java.time.LocalDate;
+
+import java.time.format.DateTimeFormatter;
+
+// The 'cat' class extends the 'Pet' class, creating a 'cat' pet in the hotel system
+public class Cat extends Pet {
+
+    // Constructor with LocalDate, initializes a 'cat' object with specific details
+    public Cat(String petType, String petName, int ageInYears, int ageInMonths, String size, int petSpace, int daysStay, double amountDue,
+               boolean needsGrooming, String ownerFirstName, String ownerLastName, String address, String city, String state,
+               String zipCode, String phoneNumber, LocalDate checkInDate, LocalDate checkOutDate) {
+        super(petType, petName, ageInYears, ageInMonths, size, petSpace, daysStay, amountDue, needsGrooming, ownerFirstName, 
+              ownerLastName, address, city, state, zipCode, phoneNumber, checkInDate, checkOutDate);
+    }
+
+    @Override
+    public double getGroomingCost() {
+        if (isNeedsGrooming()) {
+            switch (getSize().toLowerCase()) {
+                case "small":
+                    return 20.00;
+                case "medium":
+                    return 35.00;
+                case "large":
+                    return 50.00;
+                case "extra-large":
+                    return 70.00;
+                default:
+                    return 0.00;
+            }
+        }
+        return 0.00;
+    }
+
+    @Override
+    public String getPetInfo() {
+        double groomingCost = getGroomingCost();
+        double totalCost = getAmountDue() + groomingCost;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MMM dd, yyyy");
+
+        return String.format("========== Pet Information ========== \n\n" +
+                             "Pet Type: %s\n\n" +
+                             "Pet Name: %s\n" +
+                             "Age: %d years, %d months\n" +
+                             "Size: %s\n" +
+                             "Pet Space: %d\n" +
+                             "Days Stay: %d\n\n" +
+                             "-------------------------\n" +
+                             "Owner: %s %s\n" +
+                             "Address: %s\n" +
+                             "City: %s\n" +
+                             "State: %s\n" +
+                             "Zip Code: %s\n" +
+                             "Phone: %s\n\n" +
+                             "========================================\n" +
+                             "Boarding Cost: $%.2f\n" +
+                             "Grooming Cost: $%.2f\n" +
+                             "=========================\n" +
+                             "Total Cost: $%.2f\n" +
+                             "------------------------------\n" +
+                             "Check-in Date: %s\n\n" +
+                             "Check-out Date: %s\n" +
+                             "========================================\n",
+                             getPetType(), getPetName(), getAgeInYears(), getAgeInMonths(), getSize(), getPetSpace(),
+                             getDaysStay(), getOwnerFirstName(), getOwnerLastName(), getAddress(), getCity(), getState(), getZipCode(),
+                             getPhoneNumber(), getAmountDue(), groomingCost, totalCost, 
+                             getCheckInDate().format(formatter), getCheckOutDate().format(formatter));
+    }
+}

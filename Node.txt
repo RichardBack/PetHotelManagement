@@ -1,0 +1,53 @@
+/**
+ * 
+ * Author: Richard Backscheider
+ * 
+ * Date: November 17, 2024
+ * 
+ * Intent: The 'Node' class represents an element in the LinkedList, storing a reference to a 'Pet'
+ * and the next node. Acting as a building block for the list, the 'node' class enables dynamic
+ * addition, removal, and traversal of pets.
+ *  
+ * Decisions: The 'Node' class uses a straightforward approach with a 'Pet' reference and a link
+ * to the next node, making it essential to the 'LinkedList'. This structure supports efficient insertion, 
+ * removal, and relinking of nodes.
+ * 
+ * Dependencies: 
+ * java.time.LocalData; Enables handling for check-in and check-out dates
+ * 
+ */
+package thedogscatshotel.linkedlist;
+
+//Import needed packages
+import thedogscatshotel.pets.Pet;
+
+public class Node {
+    private Pet pet;  // The pet stored in this node
+    private Node next;  // Reference to the next node in the list
+
+    // Constructor to initialize the node with a pet and set the next node to null
+    public Node(Pet pet) {
+        this.pet = pet;
+        this.next = null;
+    }
+
+    // Getter method for the pet stored in this node
+    public Pet getPet() {
+        return pet;
+    }
+
+    // Setter method for the pet stored in this node
+    public void setPet(Pet pet) {
+        this.pet = pet;
+    }
+
+    // Getter method for the reference to the next node
+    public Node getNext() {
+        return next;
+    }
+
+    // Setter method for the reference to the next node
+    public void setNext(Node next) {
+        this.next = next;
+    }
+}

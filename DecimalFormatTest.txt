@@ -1,0 +1,27 @@
+ /**
+ * 
+ * Author: Richard Backscheider
+ * 
+ * Date: November 17, 2024
+ * 
+ * Intent:  This class showcases how to use `DecimalFormat` to format numbers as currency with two decimal places, 
+ * ensuring proper rounding and a consistent display for monetary values. 
+ *  
+ * Decisions: `DecimalFormat` was chosen to format numbers as currency, providing a simple way to display 
+ * prices or billing amounts consistently, with rounding as needed for clarity.
+ * 
+ */
+
+package thedogscatshotel.test; // Ensure this package matches your project's structure
+
+//Import needed packages
+import java.text.DecimalFormat;
+
+public class DecimalFormatTest {
+    public static void main(String[] args) {
+        DecimalFormat df = new DecimalFormat("$#.00");
+        System.out.println(df.format(190));    // Should print $190.00
+        System.out.println(df.format(190.5));  // Should print $190.50
+        System.out.println(df.format(190.555)); // Should print $190.56 (rounding)
+    }
+}

@@ -1,0 +1,193 @@
+ /**
+ * 
+ * Author: Richard Backscheider
+
+ * 
+ * Date: November 17, 2024
+ * 
+ * Intent: The 'Main' class handles pet 'check-ins' and 'checkouts' within 'thedogscatshotel' system. 
+ * It creates 'Dog' and 'Cat' objects with attributes such as name, age, size, and duration of stay. The class 
+ * uses the 'printPetInfo' method to display detailed pet information, including boarding costs, grooming services/costs,
+ * if obtained and owner details. The pet data is formatted in bold black text using ANSI escape codes.
+ *  
+ * Decisions: This code manages a pet hotel system for 'dogs' and 'cats.' It creates pet objects with attributes such 
+ * as name, age, size, stay duration, and grooming needs. The system handles 'check-ins' and 'check-outs' using 'LocalDate' 
+ * and displays pet details, including pet boarding and grooming costs, with the 'PrintPetInfo' method. The system uses a base
+ * 'Pet' class with subclasses of dogs and cats, offering scalability and flexibility for further expansion.
+ * 
+ * Dependencies: 
+ * java.time.LocalData; Enables handling for check-in and check-out dates
+ * java.time.format.DateTimeFormatter; Enables aid for formatting dates.
+ * 
+ */
+package thedogscatshotel.main;
+
+//Import needed packages
+import java.time.LocalDate;
+
+import thedogscatshotel.pets.Cat;
+import thedogscatshotel.pets.Dog;
+import thedogscatshotel.pets.Pet;
+
+public class Main {
+	
+    public static void main(String[] args) {
+        // Create example check-in and check-out dates
+        LocalDate checkInDate = LocalDate.now(); // Current date
+        LocalDate checkOutDate = LocalDate.now().plusDays(5); // Example: 5 days later
+
+        // Creating sample Cat and Dog objects with various attributes
+        Cat myCat = new Cat(
+            "Cat",          // Pet Type
+            "Saki",         // Pet Name
+            0,              // Age in years
+            6,              // Age in months
+            "Small",        // Pet Size
+            101,            // Pet space (room number)
+            5,              // Days stay
+            110.0,          // Amount due
+            true,           // Requires grooming
+            "Kitty",        // Owner's first name
+            "Katz",         // Owner's last name
+            "1953 Meow Ave", // Address
+            "Catskill",     // City
+            "New York",     // State
+            "12345",        // Zip code
+            "555-1414",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        Dog myDog = new Dog(
+            "Dog",          // Pet Type
+            "Nami",         // Pet Name
+            0,              // Age in years
+            7,              // Age in months
+            "Extra-Large",  // Pet Size
+            102,            // Pet space (room number)
+            7,              // Days stay
+            200.0,          // Amount due
+            true,           // Requires grooming
+            "Yosemite",     // Owner's first name
+            "Sam",          // Owner's last name
+            "1313 Rascally Dog Rd", // Address
+            "Rottweiler",   // City
+            "Canada",       // State
+            "M5V 3L9",      // Zip code
+            "444-1212",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        // Creating additional Dog objects
+        Dog dogKennedy = new Dog(
+            "Dog",          // Pet Type
+            "Kennedy",      // Pet Name
+            11,             // Age in years
+            4,              // Age in months
+            "Medium",       // Pet Size
+            103,            // Pet space (room number)
+            10,             // Days stay
+            200.0,          // Amount due
+            true,           // Requires grooming
+            "GoodDay",      // Owner's first name
+            "Mate",         // Owner's last name
+            "Kangaroo Lane", // Address
+            "Perth",        // City
+            "Australia",    // State
+            "6000",         // Zip code
+            "497-1234",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        Dog dogLucie = new Dog(
+            "Dog",          // Pet Type
+            "Lucie",        // Pet Name
+            0,              // Age in years
+            5,              // Age in months
+            "Medium",       // Pet Size
+            104,            // Pet space (room number)
+            6,              // Days stay
+            140.0,          // Amount due
+            true,           // Requires grooming
+            "Barnyard",     // Owner's first name
+            "Dawg",         // Owner's last name
+            "1212 Barnyard Blvd", // Address
+            "Old English Sheepdog", // City
+            "England",      // State
+            "22233",        // Zip code
+            "777-6161",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        Cat catMaribel = new Cat(
+            "Cat",          // Pet Type
+            "Maribel",      // Pet Name
+            2,              // Age in years
+            5,              // Age in months
+            "Medium",       // Pet Size
+            105,            // Pet space (room number)
+            3,              // Days stay
+            200.0,          // Amount due
+            false,          // Requires grooming
+            "Granny",       // Owner's first name
+            "Sylvester",    // Owner's last name
+            "987 LooneyToon Lane", // Address
+            "Scottish Fold", // City
+            "VT",           // State
+            "12345",        // Zip code
+            "565-7289",     // Telephone number
+            checkInDate,    // Check-in date
+            checkOutDate    // Check-out date
+        );
+
+        // ANSI escape codes for black bold text
+        String blackBold = "\033[30;1m";
+        String reset = "\033[0m";
+
+        // Print each pet's information in black bold text
+        printPetInfo(myCat, blackBold, reset);
+        printPetInfo(myDog, blackBold, reset);
+        printPetInfo(dogKennedy, blackBold, reset);
+        printPetInfo(dogLucie, blackBold, reset);
+        printPetInfo(catMaribel, blackBold, reset);
+    }
+
+    private static void printPetInfo(Pet pet, String blackBold, String reset) {
+        System.out.println(blackBold + "============ Pet Information ============" + reset);
+        System.out.println();
+        System.out.println("Pet Type: " + pet.getPetType());
+        System.out.println();
+        System.out.println("------------------------------------");
+        System.out.println("Pet Name: " + pet.getPetName());
+        System.out.println("Age: " + pet.getAgeInYears() + " years, " + pet.getAgeInMonths() + " months");
+        System.out.println("Size: " + pet.getSize());
+        System.out.println("Pet Space: " + pet.getPetSpace());
+        System.out.println("Days Stay: " + pet.getDaysStay());
+        System.out.println();
+        System.out.println("Boarding Cost: $" + pet.getAmountDue());
+        System.out.println("Grooming Cost: $" + pet.getGroomingCost());
+        System.out.println();
+        System.out.println("-------------------------------------");
+        System.out.println("Total Cost: $" + (pet.getAmountDue() + pet.getGroomingCost()));
+        System.out.println();
+        System.out.println("=====================================");
+        System.out.println("Owner: " + pet.getOwnerFirstName() + " " + pet.getOwnerLastName());
+        System.out.println("Address: " + pet.getAddress());
+        System.out.println("City: " + pet.getCity());
+        System.out.println("State: " + pet.getState());
+        System.out.println("Zip Code: " + pet.getZipCode());
+        System.out.println("Phone: " + pet.getPhoneNumber());
+        System.out.println();
+        System.out.println("======================================");
+        System.out.println();
+        System.out.println("Check-in Date: " + pet.getCheckInDate());
+        System.out.println();
+        System.out.println("Check-out Date: " + pet.getCheckOutDate());
+        System.out.println();
+        System.out.println("=======================================");
+        System.out.println();
+    }
+}
