@@ -1,0 +1,51 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent is to create a 'Dog' class that inherits form the 'Pet' class,
+# adding specific attributes for dogs and providing a method to return their formatted
+# information
+
+# Decisions: The decision is to create a 'Dog' class defined with a constructor to
+# initialize dog-specific attributes and a 'get_pet_info' method to display detailed,
+# formatted information about the dog
+
+from pets.pet import Pet  # Import base Pet class
+
+class Dog(Pet):
+    def __init__(self, name, age_years, age_months, size, days_stay, boarding_cost, grooming, grooming_cost,
+                 owner_name, owner_address, owner_city, owner_state, owner_zip, owner_phone, breed,
+                 check_in_date, check_out_date):
+        """Initialize Dog attributes using the Pet base class."""
+        super().__init__(name, age_years, age_months, size, days_stay, boarding_cost, grooming, grooming_cost,
+                         owner_name, owner_address, owner_city, owner_state, owner_zip, owner_phone, breed,
+                         check_in_date, check_out_date)
+
+    def get_pet_info(self):
+        """Return detailed information about the dog."""
+        info = (
+            "==========Pet Information==========\n\n"
+            "Pet Type: Dog\n"
+            "---------------------------------\n\n"
+            f"Pet Name: {self.name}\n"
+            f"Age: {self.age_years} years {self.age_months} months\n"
+            f"Size: {self.size}\n"
+            f"Days Stay: {self.days_stay}\n"
+            f"Boarding Cost: ${self.boarding_cost:.2f}\n"
+            f"Grooming: {'Yes' if self.grooming else 'No'}\n"
+            f"Grooming Cost: ${self.grooming_cost:.2f}\n\n"
+            "------------------------------\n\n"
+            f"Total Cost: ${self.boarding_cost + self.grooming_cost:.2f}\n\n"
+            "=========================\n\n"
+            f"Owner Name: {self.owner_name}\n"
+            f"Address: {self.owner_address}\n"
+            f"City: {self.owner_city}\n"
+            f"State: {self.owner_state}\n"
+            f"Zip: {self.owner_zip}\n"
+            f"Phone: {self.owner_phone}\n"
+            f"Breed: {self.breed}\n\n"
+            "==========================\n\n"
+            f"Checked In: {self.check_in_date.strftime('%m/%d/%Y')}\n"
+            f"Checked Out: {self.check_out_date.strftime('%m/%d/%Y')}\n"
+            "=========================="
+        )
+        return info

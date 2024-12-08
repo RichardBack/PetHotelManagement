@@ -1,0 +1,10 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent is to test ANSI escape codes for text styling
+
+# Decisions: The decision was made to apply bold black styling using escape
+# codes and reset it after
+
+# test_ansi.py
+print("\033[30;1mThis text should be bold black.\033[0m")

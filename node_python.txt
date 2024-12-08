@@ -1,0 +1,15 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent is to define a basic structure for a linkedlist, where each node stores
+# data and references the next node, enabling a dynamic sequence of elements
+
+# Decisions: The decision is to create a Node class that stores data and includes a pointer
+# to link to the next node in a linkedlist. Initially, the pointer is set to None, indicating
+# either the end of the list or an unconnected state
+
+class Node:
+    def __init__(self, data=None):
+        # Initialize a Node with data and pointer to the next node
+        self.data = data  # Store node data
+        self.next = None  # Initialize the next pointer to None

@@ -1,0 +1,69 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent is to manage and display detailed information about pets
+# in a boarding facility, that includes duration of stay, grooming services is needed,
+# owner information. This is done using and object-oriented approach for clarity and
+# modularity
+
+# Decisions: The decision is to create a scrip that instantiates pet objects (cats and dogs)
+# with specific attributes, stores them in a list, and displays their information using
+# the 'print_pet_information function. This method organizes and presents pet data efficiently
+# for easy access and viewing
+
+from datetime import datetime
+from pets.cat import Cat  # Import Cat class
+from pets.dog import Dog  # Import Dog class
+
+def print_pet_info(pets):
+    # Print information for each pet
+    for pet in pets:
+        print(pet.get_pet_info())
+
+# Check if the script is being run as the main program
+if __name__ == "__main__":
+    # List of pet instances (Cats and Dogs)
+    pets = [
+        # Create Cat instance with specific attributes
+        Cat(
+            name="Saki", age_years=0, age_months=6, size="Small", days_stay=0, boarding_cost=110.00,
+            grooming=True, grooming_cost=25.00, owner_name="Kitty Katz", owner_address="1953 Meow Ave",
+            owner_city="Catskill", owner_state="New York", owner_zip="12345", owner_phone="555-1414",
+            breed="Siamese", check_in_date=datetime(2024, 9, 16), check_out_date=datetime(2024, 11, 29)
+        ),
+
+        # Create Dog instance with specific attributes
+        Dog(
+            name="Nami", age_years=0, age_months=7, size="Extra-Large", days_stay=0, boarding_cost=200.00,
+            grooming=True, grooming_cost=90.00, owner_name="Yosemite Sam", owner_address="1313 Rascally Dog Rd",
+            owner_city="Rottweiler", owner_state="Canada", owner_zip="6000", owner_phone="444-1212",
+            breed="Rottweiler", check_in_date=datetime(2024, 10, 16), check_out_date=datetime(2024, 11, 4)
+        ),
+
+        # Create Dog instance with specific attributes
+        Dog(
+            name="Kennedy", age_years=11, age_months=4, size="Medium", days_stay=0, boarding_cost=200.00,
+            grooming=True, grooming_cost=40.00, owner_name="GoodDay Mate", owner_address="Kangaroo Lane",
+            owner_city="Perth", owner_state="Australia", owner_zip="6000", owner_phone="497-1234",
+            breed="Australian Shepherd", check_in_date=datetime(2024, 11, 2), check_out_date=datetime(2024, 11, 21)
+        ),
+
+        # Create Dog instance with specific attributes
+        Dog(
+            name="Lucie", age_years=0, age_months=5, size="Medium", days_stay=0, boarding_cost=140.00,
+            grooming=True, grooming_cost=40.00, owner_name="Barnyard Dawg", owner_address="1212 Barnyard Blvd",
+            owner_city="Old English Sheepdog", owner_state="England", owner_zip="22233", owner_phone="777-6161",
+            breed="Old English Sheepdog", check_in_date=datetime(2024, 9, 16), check_out_date=datetime(2024, 10, 31)
+        ),
+
+        # Create Cat instance with specific attributes
+        Cat(
+            name="Maribel", age_years=2, age_months=5, size="Medium", days_stay=0, boarding_cost=200.00,
+            grooming=False, grooming_cost=0.00, owner_name="Granny Sylvester", owner_address="987 LooneyToon Lane",
+            owner_city="Scottish Fold", owner_state="VT", owner_zip="12345", owner_phone="565-7289",
+            breed="Scottish Fold", check_in_date=datetime(2024, 11, 1), check_out_date=datetime(2024, 11, 24)
+        )
+    ]
+
+    # Display information for all pets
+    print_pet_info(pets)

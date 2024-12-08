@@ -1,0 +1,86 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent of this code is to manage a MySQL database
+# for storing and retrieving pet information, this includes
+# creating a 'pets' table, inserting pet records, and fetching all
+# stored pet information for a boarding facility system
+
+# Decisions: The decision is made to implement functions for
+# creating a pet table, inserting pet records, and retrieving
+# pet data from a MySQL database, with error handling for smooth
+# operation
+
+import mysql.connector
+from mysql.connector import Error
+
+def get_connection():
+    return mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="skippy",
+        database="thedogscatshotel"  # Ensure the database is specified here
+    )
+
+def create_pet_table():
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        create_table_query = """
+        CREATE TABLE IF NOT EXISTS pets (
+            id INT AUTO_INCREMENT PRIMARY KEY,
+            pet_type VARCHAR(50),
+            name VARCHAR(100),
+            age_years INT,
+            age_months INT,
+            size VARCHAR(50),
+            days_stay INT,
+            boarding_cost DECIMAL(10, 2),
+            grooming BOOLEAN,
+            grooming_cost DECIMAL(10, 2),
+            breed VARCHAR(100)
+        )
+        """
+        cursor.execute(create_table_query)
+        connection.commit()
+    except Error as e:
+        print(f"Error creating table: {e}")
+    finally:
+        if connection.is_connected():
+            cursor.close()
+            connection.close()
+
+def insert_pet(pet):
+    try:
+        connection = get_connection()
+        cursor = connection.cursor()
+        insert_query = """
+        INSERT INTO pets (pet_type, name, age_years, age_months, size, days_stay, boarding_cost, grooming, grooming_cost, breed)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """
+        cursor.execute(insert_query, (
+            pet.pet_type, pet.name, pet.age_years, pet.age_months, pet.size, pet.days_stay, pet.boarding_cost, pet.grooming,
+            pet.grooming_cost, pet.breed))
+        connection.commit()
+    except Error as e:
+        print(f"Error inserting pet: {e}")
+    finally:
+        if connection.is_connected():
+            cursor.close()
+            connection.close()
+
+def fetch_all_pets():
+    try:
+        connection = get_connection()
+        cursor = connection.cursor(dictionary=True)  # Use dictionary=True for named columns
+        fetch_query = "SELECT * FROM pets"
+        cursor.execute(fetch_query)
+        result = cursor.fetchall()
+        return result
+    except Error as e:
+        print(f"Error fetching pets: {e}")
+        return []
+    finally:
+        if connection.is_connected():
+            cursor.close()
+            connection.close()

@@ -1,0 +1,62 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent is to provide pet details in a clear, structured, and well-organized
+# format, that showcases personal and cost information for each pet
+# retrieved form the database. The approach prioritizes readability and improves the
+# user experience when reviewing or managing pet records.
+
+# Decisions: The decision is to implement a convenient and structured solution for retrieving
+# and displaying pet information from a database. The script leverages the 'fetch_all_pets' functions
+# to retrieve data, formats it with ANSI color codes for visual clarity, and presents the information
+# in an organized easy to read and understand layout.
+
+# display.py or main.py
+from db_operations import fetch_all_pets  # Import the fetch function
+import mysql.connector  # Optional: If you need database interaction here
+
+
+def format_pet_info(pet):
+    # Formatting pet details with ANSI escape codes for color
+    pet_info = f"\033[30;1m============ Pet Information ============\033[0m\n"
+    pet_info += f"Pet Type: {pet['pet_type']}\n"
+    pet_info += "-" * 36 + "\n"
+    pet_info += f"Pet Name: {pet['name']}\n"
+    pet_info += f"Age: {pet['age_years']} years, {pet['age_months']} months\n"
+    pet_info += f"Size: {pet['size']}\n"
+    pet_info += f"Pet Space: {pet['id']}\n"
+    pet_info += f"Days Stay: {pet['days_stay']}\n\n"
+    pet_info += f"Boarding Cost: ${pet['boarding_cost']}\n"
+    pet_info += f"Grooming Cost: ${pet['grooming_cost']}\n"
+    pet_info += "-" * 37 + "\n"
+    total_cost = pet['boarding_cost'] + pet['grooming_cost']
+    pet_info += f"Total Cost: ${total_cost}\n"
+    pet_info += "=" * 37 + "\n"
+    pet_info += f"Owner: {pet['owner_name']}\n"
+    pet_info += f"Address: {pet['address']}\n"
+    pet_info += f"City: {pet['city']}\n"
+    pet_info += f"State: {pet['state']}\n"
+    pet_info += f"Zip Code: {pet['zip_code']}\n"
+    pet_info += f"Phone: {pet['phone']}\n"
+    pet_info += "=" * 37 + "\n"
+    pet_info += f"Check-in Date: {pet['check_in_date']}\n"
+    pet_info += f"Check-out Date: {pet['check_out_date']}\n"
+    pet_info += "=" * 37 + "\n"
+
+    return pet_info
+
+def display_pets():
+    pets = fetch_all_pets()  # This retrieves all pet records from the database
+
+    if not pets:
+        print("No pets found.")
+        return
+
+    for pet in pets:
+        # Call format_pet_info function for each pet and print the formatted string
+        formatted_info = format_pet_info(pet)
+        print(formatted_info)
+
+
+if __name__ == "__main__":
+    display_pets()  # Calls the function to display the pet information

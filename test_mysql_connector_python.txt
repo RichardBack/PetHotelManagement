@@ -1,0 +1,28 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent of the code is to check if MySQL Connector/Python
+# is installed and retrieves its version for verification
+
+# Decisions: If the module is not found, the code exits with a
+# message. If the version cannot be retrieved, and error message
+# is displayed
+
+# test_mysql_connector.py
+try:
+    import mysql.connector
+except ImportError:
+    print("MySQL Connector/Python is not installed.")
+    exit()
+
+def check_mysql_connector_version():
+    try:
+        # Print the MySQL Connector/Python version
+        print(f"MySQL Connector/Python version: {mysql.connector.__version__}")
+    except AttributeError:
+        # Handle cases where the version attribute is not found
+        print("Could not retrieve the version of MySQL Connector/Python.")
+
+if __name__ == "__main__":
+    check_mysql_connector_version()
+

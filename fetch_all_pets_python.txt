@@ -1,0 +1,53 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent of the code is to connect to a MySQL
+# database, query the 'pets' table to retrieve all records,
+# and display results
+
+# Decisions: The decision is to connected to a MySQL database,
+# execute a query to retrieve all records from the 'pets' table
+# and handle any errors. If the code runs successfully, it
+# prints the fetched data, if not it logs the error and returns
+# an empty list
+
+import mysql.connector
+
+def fetch_all_pets():
+    try:
+        print("Connecting to the database...")
+        conn = mysql.connector.connect(
+            host='localhost',
+            user='your_user',
+            password='your_password',
+            database='your_db'
+        )
+        print("Connected successfully!")
+
+        cursor = conn.cursor(dictionary=True)
+        print("Executing query...")
+        query = "SELECT * FROM pets"
+        cursor.execute(query)
+
+        pets = cursor.fetchall()
+        print(f"DEBUG: Number of records fetched: {len(pets)}")
+        print("DEBUG: Raw pets data:", pets)
+
+        cursor.close()
+        conn.close()
+
+        return pets
+    except mysql.connector.Error as err:
+        print(f"Database error: {err}")
+        return []
+
+if __name__ == "__main__":
+    print("Starting script execution...")
+    pets = fetch_all_pets()
+    print("Fetch completed.")
+    if pets:
+        print("Pets fetched successfully!")
+        for pet in pets:
+            print(pet)  # Prints each pet record
+    else:
+        print("No pets found or an error occurred.")

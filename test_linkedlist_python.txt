@@ -1,0 +1,56 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent of this code is to test the core functionalities
+# of the 'Linkedlist' class, specifically ensuring that pets can be
+# added, removed, and listed correctly. The code verifies that pets
+# are properly added to the list, removed by name, and that the
+# pet names appear in the output when the list is displayed,
+# using the 'unittest' framework for structure testing
+
+# Decisions: The decision involves testing the functionality of the 'Linkedlist'
+# class, for adding, removing, and listing pets. The code verifies that
+# pets can be correctly added to the list, removed by name, and that all pets
+# can be listed properly, with appropriate logging. Testing ensures
+# that the lists behave as expected by checking if pets are added and
+# removed successfully
+
+# tests/test_linkedlist.py
+import unittest
+from linkedlist.linkedlist import LinkedList
+from pets.cat import Cat
+from pets.dog import Dog
+
+class TestLinkedList(unittest.TestCase):
+    # Setup method runs before each test case
+    def setUp(self):
+        self.pet_list = LinkedList() # Initialize a new LinkedList instance for each test
+
+    # Test case to check pet (cat) can be added to the list
+    def test_add_pet(self):
+        cat = Cat("Whiskers", 2, "Small", True, "John Doe", "123 Main St", "555-1234")
+        self.pet_list.add_pet(cat)
+        # Verify that the first pet in the list is the one we just added
+        self.assertEqual(self.pet_list.head.get_pet().get_name(), "Whiskers")
+
+    # Test case to check if a pet can be removed from the list by name
+    def test_remove_pet(self):
+        cat = Cat("Whiskers", 2, "Small", True, "John Doe", "123 Main St", "555-1234")
+        self.pet_list.add_pet(cat) # Add the cat to the pet list
+        self.pet_list.remove("Whiskers") # Remove the cat from the list by name
+        # Assert that the head of the list is None, this means the list is empty after removal
+        self.assertIsNone(self.pet_list.head)
+
+    # Test case to check if the method lists all pets correctly
+    def test_list_all_pets(self):
+        cat = Cat("Whiskers", 2, "Small", True, "John Doe", "123 Main St", "555-1234")  # Create a new Cat object
+        self.pet_list.add_pet(cat)  # Add the cat to the pet list
+        # Use assertLogs to check if the pet's name appears in the log output when listing all pets
+        with self.assertLogs(level='INFO') as log:
+            self.pet_list.list_all_pets()  # List all pets
+        # Assert that the log contains the name "Whiskers"
+        self.assertIn("Whiskers", log.output[0])
+
+# The line will run the test cases when this script is executed
+if __name__ == "__main__":
+    unittest.main()

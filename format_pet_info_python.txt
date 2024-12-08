@@ -1,0 +1,38 @@
+# Author: Richard Backscheider
+# Date: November 24, 2024
+
+# Intent: The intent is to format and display detailed pet information in a clear,
+# structured format, making it easy to read and view.
+
+# Decisions: The decision to use a function 'format_pet_info' was created to extract
+# and format pet details, including personal and cost information, into a
+# understandable and readable string for display
+
+def format_pet_info(pet):
+    # Formatting pet details into a formatted string
+    pet_info = f"\033[30;1m============ Pet Information ============\033[0m\n"
+    pet_info += f"Pet Type: {pet['pet_type']}\n"
+    pet_info += "-" * 36 + "\n"
+    pet_info += f"Pet Name: {pet['name']}\n"
+    pet_info += f"Age: {pet['age_years']} years, {pet['age_months']} months\n"
+    pet_info += f"Size: {pet['size']}\n"
+    pet_info += f"Pet Space: {pet['id']}\n"
+    pet_info += f"Days Stay: {pet['days_stay']}\n\n"
+    pet_info += f"Boarding Cost: ${pet['boarding_cost']}\n"
+    pet_info += f"Grooming Cost: ${pet['grooming_cost']}\n"
+    pet_info += "-" * 37 + "\n"
+    total_cost = pet['boarding_cost'] + pet['grooming_cost']
+    pet_info += f"Total Cost: ${total_cost}\n"
+    pet_info += "=" * 37 + "\n"
+    pet_info += f"Owner: {pet['owner_name']}\n"
+    pet_info += f"Address: {pet['address']}\n"
+    pet_info += f"City: {pet['city']}\n"
+    pet_info += f"State: {pet['state']}\n"
+    pet_info += f"Zip Code: {pet['zip_code']}\n"
+    pet_info += f"Phone: {pet['phone']}\n"
+    pet_info += "=" * 37 + "\n"
+    pet_info += f"Check-in Date: {pet['check_in_date']}\n"
+    pet_info += f"Check-out Date: {pet['check_out_date']}\n"
+    pet_info += "=" * 37 + "\n"
+
+    return pet_info
