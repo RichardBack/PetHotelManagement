@@ -88,7 +88,6 @@ Below is a video that highlights the database architecture improvements and demo
 - **Database Management**: SQL, Data Structures
 
 ## 💻 Check Out the Code  
-The full project and other work can be viewed on GitHub: [Richard's GitHub - PetHotelManagement](https://github.com/RichardBack/PetHotelManagement)  
 Visit the project’s **GitHub Pages** site: [Pet Hotel Management](https://richardback.github.io/PetHotelManagement/)
 
 ![Richard's Profile](https://raw.githubusercontent.com/NewtonianLaw/NewtonianLaw.github.io/main/Github_Photo.jpg)
