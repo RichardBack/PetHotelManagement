@@ -1,4 +1,4 @@
-# Hi, I'm Richard! 👨‍💻 Computer Scientist and Programmer
+Bag)# Hi, I'm Richard! 👨‍💻 Computer Scientist and Programmer
 
 Welcome to my ePortfolio! I am a **Computer Science graduate** from **Southern New Hampshire University**, with expertise in programming, problem-solving, and software engineering. Below is an overview of key skills, projects, and insights.
 
@@ -19,7 +19,7 @@ The **Pet Hotel Management System** is a key project highlighting skills in **so
 
 Click below to view the original **Java-based Pet Hotel Management System (PETBag)** code before any changes were made:
 
-[View the Original Code: IT-145 Pet Hotel Management](https://github.com/RichardBack/PetHotelManagement/blob/main/IT-145PetHotelManagement.txt)
+[View the Original Code: IT-145 Pet Hotel Management](https://github.com/RichardBack/PetHotelManagement/blob/main/CS145PetHotelManagementPEGBag.txt)
 
 ## 🎬 Code Review Video
 
