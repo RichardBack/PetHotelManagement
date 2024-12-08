@@ -1,4 +1,4 @@
-Bag)# Hi, I'm Richard! 👨‍💻 Computer Scientist and Programmer
+# Hi, I'm Richard! 👨‍💻 Computer Scientist and Programmer
 
 Welcome to my ePortfolio! I am a **Computer Science graduate** from **Southern New Hampshire University**, with expertise in programming, problem-solving, and software engineering. Below is an overview of key skills, projects, and insights.
 
