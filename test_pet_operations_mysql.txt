@@ -1,0 +1,76 @@
+import mysql.connector
+from mysql.connector import Error
+from pet import Pet
+
+def test_pet_operations():
+    conn = None
+    try:
+        # Connect to MySQL
+        conn = mysql.connector.connect(
+            user=XXXX',
+            password='XXXX',
+            host='localhost',
+            database='dogsandcatshotel'
+        )
+
+        if conn.is_connected():
+            print('Connected to MySQL database')
+
+            # Create a new pet instance
+            new_pet = Pet(
+                pet_name="Maribel",
+                pet_age_years=1,
+                pet_age_months=5,
+                pet_space=2,
+                days_stay=10,
+                amount_due=200.00
+            )
+
+            # Save the pet information
+            new_pet.save_to_db()
+
+            # Fetch and verify pets
+            pets = Pet.display_pets_from_db()
+            assert any(pet.pet_name == "Maribel" for pet in pets), "Pet not found in the database after saving."
+
+            print("Initial pet information saved successfully.")
+            for pet in pets:
+                if pet.pet_name == "Maribel":
+                    print(f"Pet Name: {pet.pet_name}")
+                    print("No additional records")
+                    print()
+
+            # Update pet information
+            new_pet.pet_name = "Maribel Updated"
+            new_pet.update_in_db()
+
+            # Verify updated information
+            pets = Pet.display_pets_from_db()
+            assert any(pet.pet_name == "Maribel Updated" for pet in pets), "Pet name not updated in the database."
+
+            print("Pet information updated successfully.")
+            for pet in pets:
+                if pet.pet_name == "Maribel Updated":
+                    print(f"Updated Pet Name: {pet.pet_name}")
+                    print("No additional records")
+                    print()
+
+            # Delete the pet record
+            new_pet.delete_from_db()
+
+            # Verify deletion
+            pets = Pet.display_pets_from_db()
+            assert not any(pet.pet_name == "Maribel Updated" for pet in pets), "Pet not deleted from the database."
+
+            print("Pet record deleted successfully.")
+
+    except mysql.connector.Error as e:
+        print(f'Error connecting to MySQL: {e}')
+
+    finally:
+        if conn and conn.is_connected():
+            conn.close()
+            print('MySQL connection closed')
+
+if __name__ == "__main__":
+    test_pet_operations()

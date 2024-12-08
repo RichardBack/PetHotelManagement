@@ -1,0 +1,94 @@
+import unittest
+from unittest.mock import patch, MagicMock
+from pet import Pet
+
+class TestPet(unittest.TestCase):
+
+    def setUp(self):
+        """Set up a basic Pet instance for use in tests."""
+        self.pet = Pet(
+            pet_name='',
+            pet_age_years=0,
+            pet_age_months=0,
+            pet_space=1,
+            days_stay=1,
+            amount_due=0.0
+        )
+
+    def test_pet_attributes(self):
+        """Test the initial attributes of the Pet instance."""
+        # Set attributes
+        self.pet.pet_name = "Nami"
+        self.pet.pet_age_years = 0
+        self.pet.pet_age_months = 6
+        self.pet.pet_space = 1
+        self.pet.days_stay = 7
+        self.pet.amount_due = 100.0
+
+        # Assertions
+        self.assertEqual(self.pet.pet_name, "Nami")
+        self.assertEqual(self.pet.pet_age_years, 0)
+        self.assertEqual(self.pet.pet_age_months, 6)
+        self.assertEqual(self.pet.pet_space, 1)
+        self.assertEqual(self.pet.days_stay, 7)
+        self.assertEqual(self.pet.amount_due, 100.0)
+
+    @patch('pet.mysql.connector.connect')
+    def test_save_to_db(self, mock_connect):
+        """Test saving pet data to the database."""
+        # Mock the connection and cursor
+        mock_connection = MagicMock()
+        mock_connect.return_value = mock_connection
+        mock_cursor = MagicMock()
+        mock_connection.cursor.return_value.__enter__.return_value = mock_cursor
+
+        # Call the method
+        self.pet.save_to_db()
+
+        # Assertions
+        mock_cursor.execute.assert_called()
+        mock_connection.commit.assert_called()
+        self.assertTrue(mock_cursor.execute.called)
+
+    @patch('pet.mysql.connector.connect')
+    def test_update_in_db(self, mock_connect):
+        """Test updating pet data in the database."""
+        # Set a pet ID to test update
+        self.pet.pet_id = 1
+
+        # Mock the connection and cursor
+        mock_connection = MagicMock()
+        mock_connect.return_value = mock_connection
+        mock_cursor = MagicMock()
+        mock_connection.cursor.return_value.__enter__.return_value = mock_cursor
+
+        # Call the method
+        self.pet.update_in_db()
+
+        # Assertions
+        mock_cursor.execute.assert_called()
+        mock_connection.commit.assert_called()
+        self.assertTrue(mock_cursor.execute.called)
+
+    @patch('pet.mysql.connector.connect')
+    def test_display_pets_from_db(self, mock_connect):
+        """Test fetching pets from the database."""
+        # Mock the connection and cursor
+        mock_connection = MagicMock()
+        mock_connect.return_value = mock_connection
+        mock_cursor = MagicMock()
+        mock_connection.cursor.return_value.__enter__.return_value = mock_cursor
+
+        # Define mock return values
+        mock_cursor.fetchall.return_value = [(
+            1, "Nami", 0, 6, 1, 7, 100.0)]
+
+        # Call the class method
+        pets = Pet.display_pets_from_db()
+
+        # Assertions
+        self.assertEqual(len(pets), 1)
+        self.assertEqual(pets[0].pet_name, "Nami")
+
+if __name__ == '__main__':
+    unittest.main()

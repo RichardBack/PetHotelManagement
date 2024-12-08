@@ -1,0 +1,87 @@
+# main.py
+
+from pet import Pet
+
+def main():
+    try:
+        # For testing, create and save a new pet with hardcoded data
+        test_pet = Pet(
+            owner_first_name="John",
+            owner_last_name="Doe",
+            address="123 Elm St",
+            city="Springfield",
+            state="IL",
+            zip_code="62701",
+            telephone_number="555-1234",
+            pet_type="Dog",
+            pet_name="Fido",
+            pet_age_years=3,
+            pet_age_months=6,
+            pet_space=2,
+            days_stay=5,
+            amount_due=150.00
+        )
+        test_pet.save_to_db()
+
+        # Interactive input for a new pet
+        owner_first_name = input("Enter owner's first name: ")
+        owner_last_name = input("Enter owner's last name: ")
+        address = input("Enter address: ")
+        city = input("Enter city: ")
+        state = input("Enter state: ")
+        zip_code = input("Enter zip code: ")
+        telephone_number = input("Enter telephone number: ")
+        pet_type = input("Enter pet type: ")
+        pet_name = input("Enter pet name: ")
+        pet_age_years = int(input("Enter pet age in years: "))
+        pet_age_months = int(input("Enter pet age in months: "))
+        pet_space = int(input("Enter pet space: "))
+        days_stay = int(input("Enter number of days of stay: "))
+        amount_due = float(input("Enter amount due: "))
+
+        # Create a new pet instance
+        new_pet = Pet(
+            owner_first_name=owner_first_name,
+            owner_last_name=owner_last_name,
+            address=address,
+            city=city,
+            state=state,
+            zip_code=zip_code,
+            telephone_number=telephone_number,
+            pet_type=pet_type,
+            pet_name=pet_name,
+            pet_age_years=pet_age_years,
+            pet_age_months=pet_age_months,
+            pet_space=pet_space,
+            days_stay=days_stay,
+            amount_due=amount_due
+        )
+
+        # Save the pet information to the database
+        new_pet.save_to_db()
+
+        # Optionally, update the pet if an ID is provided
+        pet_id_to_update = input("Enter pet ID to update (or press Enter to skip): ")
+        if pet_id_to_update:
+            pet_id_to_update = int(pet_id_to_update)
+            existing_pet = Pet(pet_id=pet_id_to_update)
+            existing_pet.pet_name = input("Enter new pet name: ")
+            existing_pet.update_in_db()
+
+        # Fetch pets from the database and display their information
+        pets = Pet.display_pets_from_db()
+        for pet in pets:
+            print(f"Pet ID: {pet.pet_id}, Pet Name: {pet.pet_name}, Owner: {pet.owner_first_name} {pet.owner_last_name}")
+
+        # Finding a pet with ID 1
+        pet = Pet.find_by_id(1)
+        if pet:
+            print(f"Pet found: {pet.pet_name}")
+        else:
+            print("Pet not found.")
+
+    except Exception as e:
+        print(f'Error: {e}')
+
+if __name__ == "__main__":
+    main()

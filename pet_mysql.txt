@@ -1,0 +1,235 @@
+import mysql.connector
+from mysql.connector import Error
+from typing import List, Optional
+
+class Pet:
+    def __init__(self, owner_first_name: str = '', owner_last_name: str = '', address: str = '',
+                 city: str = '', state: str = '', zip_code: str = '', telephone_number: str = '',
+                 pet_type: str = '', pet_name: str = '', pet_age_years: int = 0,
+                 pet_age_months: int = 0, pet_space: int = 1, days_stay: int = 1,
+                 amount_due: float = 0.0, pet_id: Optional[int] = None):
+        self.owner_first_name = owner_first_name
+        self.owner_last_name = owner_last_name
+        self.address = address
+        self.city = city
+        self.state = state
+        self.zip_code = zip_code
+        self.telephone_number = telephone_number
+        self.pet_type = pet_type
+        self.pet_name = pet_name
+        self.pet_age_years = pet_age_years
+        self.pet_age_months = pet_age_months
+        self.pet_space = pet_space
+        self.days_stay = days_stay
+        self.amount_due = amount_due
+        self.pet_id = pet_id
+
+    def save_to_db(self) -> None:
+        try:
+            connection = mysql.connector.connect(
+                host='localhost',
+                user='root',
+                password='skippy',  # Use your actual MySQL root password
+                database='dogsandcatshotel'
+            )
+            if connection.is_connected():
+                with connection.cursor() as cursor:
+                    if self.check_pet_exists():
+                        print("Pet already exists. Consider updating the record.")
+                        return
+
+                    insert_query = """
+                        INSERT INTO pets (owner_first_name, owner_last_name, address, city, state, zip_code,
+                                          telephone_number, pet_type, pet_name, pet_age_years, pet_age_months,
+                                          pet_space, days_stay, amount_due)
+                        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                        """
+                    data = (self.owner_first_name, self.owner_last_name, self.address, self.city, self.state,
+                            self.zip_code, self.telephone_number, self.pet_type, self.pet_name, self.pet_age_years,
+                            self.pet_age_months, self.pet_space, self.days_stay, self.amount_due)
+                    cursor.execute(insert_query, data)
+                    connection.commit()
+                    self.pet_id = cursor.lastrowid  # Retrieve the auto-generated ID
+                    print(f'Assigned pet_id: {self.pet_id}')
+        except Error as error:
+            print(f'Error: {error}')
+        finally:
+            if connection.is_connected():
+                connection.close()
+                print('MySQL connection closed')
+
+    def update_in_db(self) -> None:
+        if self.pet_id is None:
+            print("Pet ID is required for update.")
+            return
+
+        try:
+            connection = mysql.connector.connect(
+                host='localhost',
+                user='root',
+                password='skippy',  # Use your actual MySQL root password
+                database='dogsandcatshotel'  # Updated schema name
+            )
+            if connection.is_connected():
+                with connection.cursor() as cursor:
+                    update_query = """
+                    UPDATE pets
+                    SET pet_name = %s,
+                        pet_age_years = %s,
+                        pet_age_months = %s,
+                        pet_space = %s,
+                        days_stay = %s,
+                        amount_due = %s
+                    WHERE pet_id = %s
+                    """
+                    data = (self.pet_name, self.pet_age_years, self.pet_age_months, self.pet_space, self.days_stay,
+                            self.amount_due, self.pet_id)
+                    cursor.execute(update_query, data)
+                    connection.commit()
+                    print(f'Updated {cursor.rowcount} row(s) in pets table')
+        except Error as error:
+            print(f'Error: {error}')
+        finally:
+            if connection.is_connected():
+                connection.close()
+                print('MySQL connection closed')
+
+    def delete_from_db(self) -> None:
+        if self.pet_id is None:
+            print("Pet ID is required for deletion.")
+            return
+
+        try:
+            connection = mysql.connector.connect(
+                host='localhost',
+                user='root',
+                password='skippy',  # Use your actual MySQL root password
+                database='dogsandcatshotel'
+            )
+            if connection.is_connected():
+                with connection.cursor() as cursor:
+                    delete_query = "DELETE FROM pets WHERE pet_id = %s"
+                    cursor.execute(delete_query, (self.pet_id,))
+                    connection.commit()
+                    print(f'Deleted {cursor.rowcount} row(s) from pets table')
+        except Error as error:
+            print(f'Error: {error}')
+        finally:
+            if connection.is_connected():
+                connection.close()
+                print('MySQL connection closed')
+
+    def check_pet_exists(self) -> bool:
+        try:
+            connection = mysql.connector.connect(
+                host='localhost',
+                user='root',
+                password='skippy',  # Use your actual MySQL root password
+                database='dogsandcatshotel'  # Updated schema name
+            )
+            if connection.is_connected():
+                with connection.cursor() as cursor:
+                    check_query = """
+                    SELECT COUNT(*)
+                    FROM pets
+                    WHERE owner_first_name = %s AND owner_last_name = %s AND pet_name = %s
+                    """
+                    cursor.execute(check_query, (self.owner_first_name, self.owner_last_name, self.pet_name))
+                    count = cursor.fetchone()[0]
+                    return count > 0
+        except Error as error:
+            print(f'Error: {error}')
+            return False
+        finally:
+            if connection.is_connected():
+                connection.close()
+                print('MySQL connection closed')
+
+    @classmethod
+    def display_pets_from_db(cls) -> List['Pet']:
+        try:
+            connection = mysql.connector.connect(
+                host='localhost',
+                user='root',
+                password='skippy',  # Use your actual MySQL root password
+                database='dogsandcatshotel'  # Updated schema name
+            )
+            if connection.is_connected():
+                with connection.cursor() as cursor:
+                    select_query = "SELECT * FROM pets"
+                    cursor.execute(select_query)
+
+                    pets = []
+                    for row in cursor.fetchall():
+                        pet = cls(
+                            owner_first_name=row[1],
+                            owner_last_name=row[2],
+                            address=row[3],
+                            city=row[4],
+                            state=row[5],
+                            zip_code=row[6],
+                            telephone_number=row[7],
+                            pet_type=row[8],
+                            pet_name=row[9],
+                            pet_age_years=row[10],
+                            pet_age_months=row[11],
+                            pet_space=row[12],
+                            days_stay=row[13],
+                            amount_due=row[14],
+                            pet_id=row[0]  # Assuming pet_id is the first column
+                        )
+                        pets.append(pet)
+
+                    return pets
+        except Error as error:
+            print(f'Error: {error}')
+            return []
+        finally:
+            if connection.is_connected():
+                connection.close()
+                print('MySQL connection closed')
+
+
+@classmethod
+def find_by_id(cls, pet_id: int) -> Optional['Pet']:
+    try:
+        connection = mysql.connector.connect(
+            host='localhost',
+            user='root',
+            password='skippy',  # Use your actual MySQL root password
+            database='dogsandcatshotel'  # Updated schema name
+        )
+        if connection.is_connected():
+            with connection.cursor() as cursor:
+                select_query = "SELECT * FROM pets WHERE pet_id = %s"
+                cursor.execute(select_query, (pet_id,))
+                row = cursor.fetchone()
+
+                if row:
+                    return cls(
+                        owner_first_name=row[1],
+                        owner_last_name=row[2],
+                        address=row[3],
+                        city=row[4],
+                        state=row[5],
+                        zip_code=row[6],
+                        telephone_number=row[7],
+                        pet_type=row[8],
+                        pet_name=row[9],
+                        pet_age_years=row[10],
+                        pet_age_months=row[11],
+                        pet_space=row[12],
+                        days_stay=row[13],
+                        amount_due=row[14],
+                        pet_id=row[0]
+                    )
+                else:
+                    print(f"No pet found with ID: {pet_id}")
+                    return None
+    except Error as error:
+        print(f'Error: {error}')
+        return None
+    finally:
+        if connection.is_connected():
+            connection.close()
+            print('MySQL connection closed')
