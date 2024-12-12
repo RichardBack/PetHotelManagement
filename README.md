@@ -1,5 +1,4 @@
 # Professional ePortfolio of Richard
---
 
 ## Introduction
 Hi, I'm Richard! 👨‍💻 **Computer Scientist and Programmer**
@@ -14,15 +13,11 @@ In this portfolio, you will find:
 - Reflections on the enhancement process and lessons learned.
 - Alignemnt of each artifact with course outcomes.
 
---
-  
 ## 📚 About Me
 
 As a Computer Science graduate, I have built a strong foundation in problem-solving, algorithms, and coding. I thrive on creating efficient, scalable software solutions while adapting to new programming languages. Each artifact in the portfolio aligns with the overarching narrative of a problem solver ready to tackle the challenges of the computer science field. 
 
 Projects like the **Pet Hotel Management (PETBag) System**, demonstrate my ability to design, implement, and secure scalable systems. They showcase my growth in **object-oriented programming**, **database management**, and **software reverse engineering**, as well as an adaptability to new technologies and problem domains.
-
---
 
 ## 🌟 Featured Project: **Pet Hotel Management (PETBag) System**
 
@@ -49,8 +44,6 @@ Watch an overview of the **original Java-based Pet Hotel Management (PETBag) Sys
 
 🔗 [Watch the Code Review Video - Java Code Review](https://youtu.be/0b_1pya0T1Y)
 
---
-
 ## 📂 Category One: **Computer Engineering and Design**
 
 The **Pet Hotel Management (PETBag) System** underwent significant enhancements, including updates to its structure, scalability, perfomance, and a name change to **The Dogs Cats Hotel**). These updates adhere to **Software Engineering and Design** principles.
@@ -72,8 +65,6 @@ Learn about the updates and their impact on the system’s performance and user 
 ### Code Reviews in Design:  
 During the enhancement of the **Pet Hotel Management (PETBag) system**, code reviews were a crucial part of the development process. They helped improve design choices, ensuring the correct application of object-oriented principles such as inheritance and polymorphism. Peer feedback was instrumental in refining the system's architecture and optimizing the transition from Java to Python.
 
----
-
 ## 📂 Category Two: **Algorithms and Data Structures**
 
 The **Pet Hotel Management (PETBag) System** was further enhanced to incorporate advanced algorithms and data structures, improving efficiency, scalability, and performance.
@@ -93,8 +84,6 @@ Explore the improvements in algorithms and data structures within the system.
 ### Code Reviews in Algorithms:  
 The implementation of the LinkedList data structure and associated algorithms in the PetBAG system was carefully reviewed to ensure efficiency and optimal performance. Code reviews helped identify potential performance bottlenecks, security issues, and areas where user inputs or data sizes might be mishandled, fostering collaborative problem-solving and refinement of the structure.
 
----
-
 ## 📂 Category Three: **Databases**
 
 Database enhancements for the **Pet Hotel Management (PETBag) System** focused on scalability, data integrity, and system reliability.
@@ -112,14 +101,10 @@ Watch how the database improvements have elevated the system's efficiency and se
 ### Code Reviews in Database Integration:  
 The integration of MySQL into the PetBAG system involved thorough reviews of SQL queries and CRUD operations to ensure secure and optimized interactions with the database. Code reviews highlighted areas for improvement, such as implementing parameterized queries to prevent SQL injection vulnerabilities and optimizing the database schema for scalability and future growth.
 
----
-
 ## 🎯 Key Skills
 - **Programming Languages**: Java, Python, C++, HTML/CSS, JavaScript
 - **Software Engineering**: Object-Oriented Programming (OOP), Design Patterns
 - **Database Management**: SQL, Data Structures
-
----
 
 ## Professional Self-Assessment
 
@@ -133,8 +118,6 @@ Some of the key skills I've developed include:
 
 This ePortfolio encapsulates the technical growth I’ve made during the program, including improvements I’ve made to the projects like the **Pet Hotel Management (PETBag) System**. It demonstrates my ability to adapt, optimize, and ensure security in software systems, making me prepared for a successful career in software development.
 
----
-
 ## Summary
 This portfolio cohesively ties together the narrative of my skills and career aspirations. It begins with a high-level overview of my technical 
 capabilities and professional goals and connects each project back to this narrative. Whether it's transitioning between programming languages, 
@@ -144,7 +127,5 @@ implementing secure systems, or solving complex challenges, the portfolio demons
 
 Visit the project’s GitHub page:  
 🔗 [Pet Hotel Management](https://richardback.github.io/PetHotelManagement/)
-
----
 
 ![Richard's Profile](https://raw.githubusercontent.com/NewtonianLaw/NewtonianLaw.github.io/main/Github_Photo.jpg)
