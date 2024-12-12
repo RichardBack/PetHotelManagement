@@ -8,7 +8,7 @@ As a Computer Science graduate, I have built a strong foundation in problem-solv
 
 ## 🌟 Featured Project: **Pet Hotel Management System**
 
-The **Pet Hotel Management System** is a key project highlighting skills in **software engineering**, **algorithms**, and **database management**. Initially developed as a **Java-based system**, the project has evolved into a **Python-based solution** to manage both dogs and cats within **MySQL** database. This transition enables more efficient data handling and interaction with the database, leveraging Python's flexibility alongside MySQL's robust relational database management capabilities. 
+The **Pet Hotel Management System** is a key project highlighting skills in **software engineering**, **algorithms**, and **database management**. Initially developed as a **Java-based system**, the project has evolved into a **Python-based solution** to manage both dogs and cats within a **MySQL** database. This transition enables more efficient data handling and interaction with the database, leveraging Python's flexibility alongside MySQL's robust relational database management capabilities.  
 The system maintains essential functionalities such as:
 - **Check-In/Check-Out Processes**
 - **Pet-Specific Services**
@@ -47,6 +47,9 @@ Learn about the updates and their impact on the system’s performance and user 
 
 🔗 [Watch the Enhancements Video - Software Engineering and Design](https://youtu.be/THa4Mwbl8nI)
 
+### Code Reviews in Design:  
+During the enhancement of the Pet Hotel Management system, code reviews were a crucial part of the development process. They helped improve design choices, ensuring the correct application of object-oriented principles such as inheritance and polymorphism. Peer feedback was instrumental in refining the system's architecture and optimizing the transition from Java to Python.
+
 ---
 
 ## 📂 Category Two: **Algorithms and Data Structures**
@@ -65,6 +68,9 @@ Explore the improvements in algorithms and data structures within the system.
 
 🔗 [Watch the Enhancements Video - Algorithms and Data Structures](https://youtu.be/z4FT6d7N8iI)
 
+### Code Reviews in Algorithms:  
+The implementation of the LinkedList data structure and associated algorithms in the PetBAG system was carefully reviewed to ensure efficiency and optimal performance. Code reviews helped identify potential performance bottlenecks, security issues, and areas where user inputs or data sizes might be mishandled, fostering collaborative problem-solving and refinement of the structure.
+
 ---
 
 ## 📂 Category Three: **Databases**
@@ -80,6 +86,9 @@ Database enhancements for the **Pet Hotel Management System** focused on scalabi
 Watch how the database improvements have elevated the system's efficiency and security.
 
 🔗 [Watch the Enhancements Video - Databases](https://youtu.be/7XpiSde4HZs)
+
+### Code Reviews in Database Integration:  
+The integration of MySQL into the PetBAG system involved thorough reviews of SQL queries and CRUD operations to ensure secure and optimized interactions with the database. Code reviews highlighted areas for improvement, such as implementing parameterized queries to prevent SQL injection vulnerabilities and optimizing the database schema for scalability and future growth.
 
 ---
 
