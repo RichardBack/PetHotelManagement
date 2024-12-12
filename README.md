@@ -1,7 +1,16 @@
-# Hi, I'm Richard! 👨‍💻 Computer Scientist and Programmer
+# Professional ePortfolio of Richard
 
-Welcome to my ePortfolio! I am a **Computer Science graduate** from **Southern New Hampshire University**, with expertise in programming, problem-solving, and software engineering. Below is an overview of key skills, projects, and insights.
+## Introduction
+Hi, I'm Richard! 👨‍💻 Computer Scientist and Programmer
 
+Welcome to my professional ePortfolio! This document provides an overview of the key projects I have developed throughout my Computer Science program at SNHU. The projects included here showcase the skills I've acquired in areas such as software engineering, algorithms, data structures, and database management.
+
+In this portfolio, you will find:
+- A description of each artifact.
+- Justification for its inclusion.
+- Reflection on the enhancement process and what I learned.
+- How each artifact aligns with the course outcomes.
+- 
 ## 📚 About Me
 
 As a Computer Science graduate, I have built a strong foundation in problem-solving, algorithms, and coding. I thrive on creating efficient, scalable software solutions while adapting to new programming languages.
@@ -9,6 +18,9 @@ As a Computer Science graduate, I have built a strong foundation in problem-solv
 ## 🌟 Featured Project: **Pet Hotel Management System**
 
 The **Pet Hotel Management System** is a key project highlighting skills in **software engineering**, **algorithms**, and **database management**. Initially developed as a **Java-based system**, the project has evolved into a **Python-based solution** to manage both dogs and cats within a **MySQL** database. This transition enables more efficient data handling and interaction with the database, leveraging Python's flexibility alongside MySQL's robust relational database management capabilities.  
+
+The decision to transition from Java to Python was made to take advantage of Python's simpler syntax and faster development cycle. This allowed me to enhance the code's readability and scalability, particularly as we integrated with MySQL for database management.
+
 The system maintains essential functionalities such as:
 - **Check-In/Check-Out Processes**
 - **Pet-Specific Services**
@@ -96,6 +108,20 @@ The integration of MySQL into the PetBAG system involved thorough reviews of SQL
 - **Programming Languages**: Java, Python, C++, HTML/CSS, JavaScript
 - **Software Engineering**: Object-Oriented Programming (OOP), Design Patterns
 - **Database Management**: SQL, Data Structures
+
+---
+
+## Professional Self-Assessment
+
+Completing the coursework throughout my Computer Science program at SNHU and developing this ePortfolio has allowed me to effectively showcase my strengths in software development. Throughout my journey, I have worked on various projects that highlight my proficiency in **software engineering and desing**, **algorithms and data structures**, **database management**, and **security**.
+
+Some of the key skills I've developed include:
+- Collaborating effectively in a team environment to solve problems.
+- Communicating technical concepts clearly to stakeholders.
+- Demonstrating deep knowledge of **software engineering and design**, **algorithms and data structures**, and **database**  practices.
+- Ensuring **database security** and optimizing code for performance.
+
+This ePortfolio encapsulates the technical growth I’ve made during the program, including improvements I’ve made to the projects like the **Pet Hotel Management System**. It demonstrates my ability to adapt, optimize, and ensure security in software systems, making me prepared for a successful career in software development.
 
 ---
 
