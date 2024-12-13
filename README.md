@@ -8,10 +8,10 @@ Welcome to my ePortfolio! This document provides an overview of the key projects
 The portfolio showcases my journey through computer science, emphasizing technical expertise, problem-solving, and adaptability. It reflects my proficiency in multiple programming languages, application of software engineering principles, and ability to create innovative real-world solutions. Together, these projects collectively illustrate my growth as a developer and my readiness to excel in the computer science field.
  
 In this portfolio, you will find:
-- Detailed descriptions of each artifact.
-- Justifications for their inclusion.
+- Descriptions of each artifact.
+- Justifications for its inclusion.
 - Reflections on the enhancement process and lessons learned.
-- Alignemnt of each artifact with course outcomes.
+- How each artifact aligns with the course outcomes.
 
 ## 📚 About Me
 
