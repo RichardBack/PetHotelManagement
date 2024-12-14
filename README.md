@@ -27,7 +27,7 @@ ___
 
 The **Pet Hotel Management (PETBag) System** demonstrates expertise in **software engineering** 🛠️, **algorithms** 📐, and **database management** 🗃️. Initially developed as a **Java-based system** ☕, it has since evolved into a **Python-based solution** 🖥️ integrated with **MySQL** 💾 to manage dogs and cats effectively. This transition enhanced efficiency, scalability, and database interaction by leveraging Python's flexibility and MySQL's relational database capabilities.
 
----
+___
 
 ## System Features
 
@@ -36,13 +36,15 @@ The system maintains essential functionalities such as:
 - Pet-Specific Services 🐕🐈
 - Structured Database Management 🗂️
 
+___
+
 ### Key Enhancements:
 
 - **Java Implementation**: Core classes (Pet, Dog, Cat) developed to manage pet data 🐾.
 - **Python Adaptation**: Transitioned to Python 🖥️, improving code readability and scalability 🔄.
 - **Database Integration**: Integrated advanced data structures (Node, PetLinkedList) 💻 to support dynamic pet record management.
 
----
+___
 
 ### Original Java Code: Pet Hotel Management (PETBag)
 
@@ -53,11 +55,13 @@ Watch an overview of the **original Java-based Pet Hotel Management (PETBag) Sys
 
 🔗 [Watch the Code Review Video - Java Code Review](https://youtu.be/0b_1pya0T1Y)
 
----
+___
 
 ## 📊 Personal Assessment
 
 ### 📂 Category One: **Computer Engineering and Design**
+
+___
 
 #### Artifact Selection and Origin:
 
@@ -68,6 +72,8 @@ ___
 #### Artifact Selection for ePortfolio:
 
 This project was selected to demonstrate adaptability in transitioning between programming languages and applying object-oriented design principles. The migration from **Java** to **Python** highlights using Python’s dynamic features to improve performance. Key components of the project include the Pet class, which utilizes encapsulation, property decorators, and methods for managing tasks like check-ins and check-outs. These enhancements improved operations, showcasing expertise in software engineering, database integration 🗄️, and problem-solving 💡.
+
+___
 
 ### Artifact Enhancement:
 
@@ -80,18 +86,20 @@ The codesbase was migrated from Java to Python to modernize the **The Dogs Cats 
 - **🔒 Enhanced Data Validation**: Strengthened input validation to ensure data integrity.
 - **📝 Improved Documentation**: Streamlined code formatting for clarity and maintainability.
 
+___
+
 🎬 **Enhancements Video**  
 Learn about the updates and their impact on the system’s performance and user experience.
 
 🔗 [Watch the Enhancements Video - Software Engineering and Design](https://youtu.be/THa4Mwbl8nI)
 
----
+___
 
 ### 🧑‍💻 Code Reviews in Software Engineering and Design: 
 
 Code reviews were crucial to the development process while enhancing the **The Dogs Cats Hotel** system. They helped improve design choices and ensured the correct application of object-oriented principles such as inheritance and polymorphism. Peer feedback was instrumental in refining the system's architecture and optimizing the transition from Java to Python.
 
----
+___
 
 ## 🏆 Course Outcome Alignment:
 
@@ -103,9 +111,11 @@ ___
 
 The **The Dogs Cats Hotel** system enhancement provided valuable insights into adapting code between languages. Transitioning from Java to Python required understanding syntax differences and language-specific features. Reorganizing class hierarchies to support dogs and cats involved careful design decisions for flexibility and scalability. Challenges included converting Java’s camelCase to Python’s snake_case and adapting error handling from Java’s try-catch to Python’s try-except. These adjustments improved the understanding of software engineering principles and their practical applications.
 
----
+___
 
 ## 📂 Category Two: **Algorithms and Data Structures**
+
+___
 
 ## Artifact Selection and Origin:
 
@@ -128,6 +138,8 @@ This project demonstrates proficiency in applying algorithms and data structures
 🔧 **Custom Data Structures**: Designed linked lists and nodes for dynamic and efficient data management.
 💾 **Memory Optimization**: Enhanced memory utilization for better performance.
 🔧 **Error Handling**: Introduced robust techniques to ensure reliable performance under high load.
+
+___
 
 🎬 **Algorithms and Data Structures Video**  
 Explore the improvements in algorithms and data structures within the system.
@@ -153,19 +165,23 @@ ___
 
 Enhancing the **The Dogs Cats Hotel** system provided valuable insights into the complexities of using LinkedLists and Nodes. The integration required balancing insertion speed with memory efficiency. A key challenge was adapting the structure to fit seamlessly within the system, considering language differences between Java and Python. Crating Node and PetLinkedList classes emphasized the importance of testing and efficient design. These experiences deepened an understanding of data structures and the need for careful design when implementing new features.
 
----
+___
 
 ## 📂 Category Three: **Databases**
 
+___
+
+#### Artifact Selection and Origin:
+
 The artifact selected for **Category Three: Databases**, is the **Pet Boarding and Grooming (PetBAG)** project from **IT-145: Foundations in App Development**, later renamed **The Dogs Cats Hotel**. This Python-based system uses **MySQL** to manage pet boarding and grooming services. It utilizes Python’s **CRUD (Create, Read, Update, Delete)** operations to handle data interactions with the MySQL database, enabling efficient management of pet records and bookings. Database enhancements for the **The Dogs Cats Hotel** system focused on scalability, data integrity, and system reliability.
 
----
+___
 
 ## Artifact Selection for Portfolio:
 
 The **The Dogs Cats Hotel** system selected for **Category Three: Algorithms** demonstrates the integration of Python with MySQL to manage pet and customer records. The project highlights skills in relational database design, CRUD operations (Create, Read, Update, Delete), and ensuring data integrity through parameterized queries to prevent SQL injection. This artifact showcases expertise in database management and is a valuable addition to the portfolio.
 
----
+___
 
 ### Artifact Enhancement:
 
@@ -177,19 +193,19 @@ The integration of Python with MySQL, using the **MySQL-connector-python** libra
 
 Enhancements focused on improving relational database design, query optimization, and secure data handling with parameterized queries to prevent SQL injection. The project also addressed schema consistency, error handling, and improved data integrity.
 
----
+___
 
 🎬 **Database Enhancements Video**  
 Watch how the database improvements have elevated the system's efficiency and security.
 
 🔗 [Watch the Enhancements Video - Databases](https://youtu.be/7XpiSde4HZs)
 
----
+___
 
 ### Code Reviews in Database Integration:  
 Integrating MySQL into the **The Dogs Cats Hotel** system involved thorough reviews of SQL queries and CRUD operations to ensure secure and optimized interactions with the database. Code reviews highlighted areas for improvement, such as implementing parameterized queries to prevent SQL injection vulnerabilities and optimizing the database schema for scalability and future growth.
 
----
+___
 
 ## 🎯 Key Skills
 
@@ -197,7 +213,7 @@ Integrating MySQL into the **The Dogs Cats Hotel** system involved thorough revi
 - **Software Engineering**: Object-Oriented Programming (OOP), Design Patterns
 - **Database Management**: SQL, Data Structures
 
----
+___
 
 ## Course Outcome Alignment:
 
@@ -210,7 +226,7 @@ The MySQL integration effectively addressed all course outcomes:
  
 This integration delivered a scalable, secure, and efficient solution.
 
----
+___
 
 ## Reflection - Category Three: Databases: 
 
@@ -221,7 +237,7 @@ Enhancing the **The Dogs Cats Hotel** provided valuable insights into integratin
   
 Mocking database interactions during testing prevented actual data modifications. Robust error handling and efficient connection management ensured system stability and security.
 
----
+___
 
 **Key Learnings:**
 
@@ -270,7 +286,7 @@ ___
 - **Real-Time Features**: Enabled the system to save updates, retrieve records, and create reports instantly.
 - **Seamless System Integration**: Used Python tools to connect the database to the rest of the system seamlessly.
 
----
+___
 
 🔐 **Overall Reflection**
 
@@ -278,7 +294,7 @@ This project successfully meets all five course outcomes by addressing real-worl
 
 Overall, this project highlights practical skills in designing adaptable, user-friendly software that addresses real-world challenges while maintaining high standards of security, efficiency, and performance.
 
----
+___
 
 ## 💻 Check Out the Code
 
