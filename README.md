@@ -1,13 +1,13 @@
 # Professional ePortfolio of Richard Backscheider
 
-# Introduction
+## Introduction
 Hi, I'm Richard Backscheider, a 💻 **Computer Scientist and Programmer**.
 
 Welcome to my ePortfolio! This document provides an overview of the key projects developed throughout the Computer Science program at Southern New Hampshire University. The projects included here showcase the skills acquired in **software engineering and design**, **algorithms and data structures**, and **databases**.
 
 This portfolio reflects my journey through computer science, emphasizing technical expertise, problem-solving, and adaptability. It highlights proficiency in multiple programming languages, application of software engineering principles, and ability to create innovative real-world solutions. Together, these projects illustrate my growth as a developer and readiness to excel in the computer science field.
  
-# This portfolio includes:
+## This portfolio includes:
 
 - Descriptions of each artifact
   
@@ -18,7 +18,7 @@ This portfolio reflects my journey through computer science, emphasizing technic
 - How each artifact aligns with the course outcomes 
 ___
 
-# 📚 About Me
+## 📚 About Me
 
 As a Computer Science graduate from Southern New Hampshire University, I have built a strong foundation in problem-solving, programming, and algorithms. My academic experience has enhanced my ability to translate concepts into efficient code, organize data effectively using structured algorithms, and create innovative solutions to complex challenges.
 
@@ -30,7 +30,7 @@ ___
 The **Pet Hotel Management** system demonstrates expertise in **software engineering**, **algorithms**, and **database management**. Initially developed as a **Java-based system**, it has since evolved into a **Python-based solution** integrated with **MySQL** to manage dogs and cats effectively. This transition enhanced efficiency, scalability, and database interaction by leveraging Python's flexibility and MySQL's relational database capabilities.
 ___
 
-# System Features
+### System Features
 
 The system maintains essential functionalities such as:
 
@@ -41,7 +41,7 @@ The system maintains essential functionalities such as:
 - Structured Database Management 
 ___
 
-# Key Enhancements:
+### Key Enhancements:
 
 - **Java Implementation**: Core classes (Pet, Dog, Cat) developed to manage pet data.
   
