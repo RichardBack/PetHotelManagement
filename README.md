@@ -1,13 +1,13 @@
-### Professional ePortfolio of Richard
+# Professional ePortfolio of Richard Backscheider
 
-### Introduction
+# Introduction
 Hi, I'm Richard Backscheider, a 💻 **Computer Scientist and Programmer**.
 
 Welcome to my ePortfolio! This document provides an overview of the key projects developed throughout the Computer Science program at Southern New Hampshire University. The projects included here showcase the skills acquired in **software engineering and design**, **algorithms and data structures**, and **databases**.
 
 This portfolio reflects my journey through computer science, emphasizing technical expertise, problem-solving, and adaptability. It highlights proficiency in multiple programming languages, application of software engineering principles, and ability to create innovative real-world solutions. Together, these projects illustrate my growth as a developer and readiness to excel in the computer science field.
  
-### This portfolio includes:
+# This portfolio includes:
 
 - Descriptions of each artifact
   
@@ -18,19 +18,19 @@ This portfolio reflects my journey through computer science, emphasizing technic
 - How each artifact aligns with the course outcomes 
 ___
 
-### 📚 About Me
+# 📚 About Me
 
 As a Computer Science graduate from Southern New Hampshire University, I have built a strong foundation in problem-solving, programming, and algorithms. My academic experience has enhanced my ability to translate concepts into efficient code, organize data effectively using structured algorithms, and create innovative solutions to complex challenges.
 
 Projects such as the **Pet Hotel Management** system demonstrate my ability to design, implement, and secure scalable systems. They highlight my growth in **object-oriented programming**, **database management**, and **software reverse engineering**, as well as my adaptability to new technologies and problem domains.
 ___
 
-### 🌟 Featured Project: **Pet Hotel Management** System
+## 🌟 Featured Project: **Pet Hotel Management** System
 
 The **Pet Hotel Management** system demonstrates expertise in **software engineering**, **algorithms**, and **database management**. Initially developed as a **Java-based system**, it has since evolved into a **Python-based solution** integrated with **MySQL** to manage dogs and cats effectively. This transition enhanced efficiency, scalability, and database interaction by leveraging Python's flexibility and MySQL's relational database capabilities.
 ___
 
-## System Features
+# System Features
 
 The system maintains essential functionalities such as:
 
@@ -41,7 +41,7 @@ The system maintains essential functionalities such as:
 - Structured Database Management 
 ___
 
-### Key Enhancements:
+# Key Enhancements:
 
 - **Java Implementation**: Core classes (Pet, Dog, Cat) developed to manage pet data.
   
@@ -50,7 +50,7 @@ ___
 - **Database Integration**: Integrated advanced data structures (Node, PetLinkedList) to support dynamic pet record management.
 ___
 
-### Original Java Code: Pet Hotel Management
+## Original Java Code: Pet Hotel Management
 
 🔗 [View the Original Java Code: IT-145 Pet Hotel Management](https://github.com/RichardBack/PetHotelManagement/blob/main/IT-145PetHotelManagement_java.txt)
 
@@ -60,9 +60,9 @@ Watch an overview of the **original Java-based Pet Hotel Management** system cod
 🔗 [Watch the Code Review Video - Java Code Review](https://youtu.be/0b_1pya0T1Y)
 ___
 
-### 📊 Personal Assessment
+# 📊 Personal Assessment
 
-### 📂 Category One: **Computer Engineering and Design**
+# 📂 Category One: **Computer Engineering and Design**
 ---
 
 ## Artifact Selection and Origin:
@@ -122,12 +122,12 @@ The transition of **The Dogs Cats Hotel** from Java to Python effectively demons
      in data handling and resource protection (**aligned with Course Outcome 5**).
 ---
 
-### 📝 Reflection:
+# 📝 Reflection:
 
 Enhancing the **The Dogs Cats Hotel** system provided valuable insights into adapting code between languages. Transitioning from Java to Python required understanding syntax differences and language-specific features. Reorganizing class hierarchies to support dogs and cats involved careful design decisions for flexibility and scalability. Challenges included converting Java’s camelCase to Python’s snake_case and adapting error handling from Java’s try-catch to Python’s try-except. These adjustments improved my understanding of software engineering principles and their practical applications.___
 ___
 
-### 📂 Category Two: **Algorithms and Data Structures**
+# 📂 Category Two: **Algorithms and Data Structures**
 ___
 
 ## Artifact Selection and Origin:
@@ -189,7 +189,7 @@ ___
 Enhancing the **The Dogs Cats Hotel** system provided valuable insights into the complexities of using LinkedLists and Nodes. The integration required balancing insertion speed with memory efficiency. A key challenge was adapting the structure to fit seamlessly within the system, considering language differences between Java and Python. Crating Node and PetLinkedList classes emphasized the importance of rigorous testing and efficient design. These experiences deepened my understanding of data structures and the need for careful design when implementing new features.
 ___
 
-### 📂 Category Three: **Databases**
+# 📂 Category Three: **Databases**
 ___
 
 ## Artifact Selection and Origin:
@@ -275,7 +275,7 @@ ___
 - Developed skills in integrating Python with MySQL for efficient data management.
 ___
 
-### 💻 Professional Self-Assessment
+# 💻 Professional Self-Assessment
 
 Completing coursework in the Computer Science program at SNHU and developing this ePortfolio highlights strengths in software development. Various projects demonstrate proficiency in **software engineering and design**, **algorithms and data structures**, **database management**, and **security**.
 
@@ -292,7 +292,7 @@ Some of the key skills developed include:
 This ePortfolio encapsulates the technical growth made during the program, including improvements to projects like **The Dogs Cats Hotel** system. It demonstrates adaptability, optimization skills, and a focus on ensuring security in software systems, reflecting readiness for a successful career in software development.
 ___
 
-### 📊 Project Overview
+# 📊 Project Overview
 
 **The Dogs Cats Hotel** system demonstrates a strong set of skills in **software engineering and design**, **algorithm and data structures**, and **databases**. This project began as a simple Java application and grew into a robust, scalable system designed to meet real-world demands in pet management operations.
 ___
@@ -325,14 +325,14 @@ ___
 - **Seamless System Integration**: I used Python tools to connect the database to the rest of the system seamlessly.
 ___
 
-### 🔐 **Overall Reflection**
+# 🔐 **Overall Reflection**
 
 This project meets all five-course outcomes by addressing real-world problems through thoughtful software design, strong communication, and technical expertise. The development of the Pet Hotel Management System exemplifies **Course Outcome 1** through collaborative problem-solving and effective communication, enabling diverse team members to integrate their skills and perspectives to achieve the project’s goals. **Course Outcome 2** is demonstrated by creating clear, professional-quality documentation and communication, ensuring technical and non-technical stakeholders were informed and engaged throughout the project. Applying algorithmic principles and design trade-offs in managing pet records highlights **Course Outcome 3**, optimizing the system for performance and scalability. **Course Outcome 4** is reflected in integrating Python with MySQL, applying innovative computing techniques to deliver a secure, real-time data management solution. Finally, **Course Outcome 5** is addressed by focusing on security, utilizing parameterized queries to prevent SQL injection and safeguarding sensitive client data, thus ensuring the system’s privacy and security.
 
 This project highlights practical skills in designing adaptable, user-friendly software that addresses real-world challenges while maintaining high security, efficiency, and performance standards.
 ___
 
-### 💻 Check Out the Code
+# 💻 Check Out the Code
 
 Visit the project’s GitHub page:  
 🔗 [Pet Hotel Management](https://richardback.github.io/PetHotelManagement/)
