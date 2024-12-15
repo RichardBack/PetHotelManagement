@@ -124,7 +124,7 @@ The transition of **The Dogs Cats Hotel** from Java to Python effectively demons
 
 ### 📝 Reflection:
 
-Enhancing the **The Dogs Cats Hotel** system provided valuable insights into adapting code between languages. Transitioning from Java to Python required understanding syntax differences and language-specific features. Reorganizing class hierarchies to support dogs and cats involved careful design decisions for flexibility and scalability. Challenges included converting Java’s camelCase to Python’s snake_case and adapting error handling from Java’s try-catch to Python’s try-except. These adjustments improved my understanding of software engineering principles and their practical applications.___
+Enhancing the **The Dogs Cats Hotel** system provided valuable insights into adapting code between languages. Transitioning from Java to Python required understanding syntax differences and language-specific features. Reorganizing class hierarchies to support dogs and cats involved careful design decisions for flexibility and scalability. Challenges included converting Java’s camelCase to Python’s snake_case and adapting error handling from Java’s try-catch to Python’s try-except. These adjustments improved my understanding of software engineering principles and their practical applications.
 ___
 
 ### 📂 Category Two: **Algorithms and Data Structures**
