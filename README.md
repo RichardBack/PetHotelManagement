@@ -106,15 +106,20 @@ ___
 
 The transition of **The Dogs Cats Hotel** from Java to Python effectively demonstrates:
 
-1. **Employ strategies for building collaborative environments**: By collaborating and solving technical challenges during the transition, diverse perspectives were engaged to support decision-making in adapting the application (**aligned with Course Outcome 1**).
+1. **Employ strategies for building collaborative environments**: By collaborating and solving technical challenges during the transition, diverse perspectives 
+     were engaged to support decision-making in adapting the application (**aligned with Course Outcome 1**).
 
-2, **Professional communication of technical decisions**: Clear documentation and explanations of technical adaptations for varied audiences demonstrated strong written, oral, and visual communication skills (**aligned with Course Outcome 2**).
+2. **Professional communication of technical decisions**: Clear documentation and explanations of technical adaptations for varied audiences demonstrated strong 
+     written, oral, and visual communication skills (**aligned with Course Outcome 2**).
 
-3. **Application of algorithmic principles and object-oriented programming**: The use of inheritance, polymorphism, and encapsulation in the system design aligns with the principles and practices of designing efficient solutions (**aligned with Course Outcome 3**).
+3. **Application of algorithmic principles and object-oriented programming**: The use of inheritance, polymorphism, and encapsulation in the system design aligns 
+     with the principles and practices of designing efficient solutions (**aligned with Course Outcome 3**).
 
-4. **Integration of innovative tools and techniques**: Leveraging Python's libraries and development environments, the project utilized modern tools to achieve industry-specific goals (**aligned with Course Outcome 4**).
+4. **Integration of innovative tools and techniques**: Leveraging Python's libraries and development environments, the project utilized modern tools to achieve 
+     industry-specific goals (**aligned with Course Outcome 4**).
 
-5. **Implementation of robust security measures to protect data**: The system design incorporated a security-focused mindset, addressing potential vulnerabilities in data handling and resource protection (**aligned with Course Outcome 5**).
+5. **Implementation of robust security measures to protect data**: The system design incorporated a security-focused mindset, addressing potential vulnerabilities 
+     in data handling and resource protection (**aligned with Course Outcome 5**).
 ---
 
 ### 📝 Reflection:
@@ -162,15 +167,20 @@ Code reviews ensured efficiency and performance of the LinkedList data structure
 
 - **Integrating the LinkedList data structure into the system demonstrates alignment with all course outcomes, showcasing a comprehensive approach to system enhancement**:
 
-- **Employ strategies for building collaborative environments**: Collaborative discussions were fostered to understand user needs and ensure the LinkedList implementation supported diverse decision-making processes, (**aligned with Course Outcome 1**).
+- **Employ strategies for building collaborative environments**: Collaborative discussions were fostered to understand user needs and ensure the LinkedList 
+    implementation supported diverse decision-making processes, (**aligned with Course Outcome 1**).
 
-- **Professional communication of technical decisions**: The feature’s design, development, and documentation were communicated professionally, through coherent and technically sound written and visual explanations tailored to stakeholders, (**aligned with Course Outcome 2**).
+- **Professional communication of technical decisions**: The feature’s design, development, and documentation were communicated professionally, through coherent 
+    and technically sound written and visual explanations tailored to stakeholders, (**aligned with Course Outcome 2**).
 
-- **Application of algorithmic principles and computer science practices**: By optimizing data management with LinkedLists, using algorithmic principles to balance performance and memory efficiency while managing trade-offs, the project, (**aligned with Course Outcome 3**).
+- **Application of algorithmic principles and computer science practices**: By optimizing data management with LinkedLists, using algorithmic principles to 
+    balance performance and memory efficiency while managing trade-offs, the project, (**aligned with Course Outcome 3**).
 
-- **Use of innovative techniques, skills, and tools**: Innovative techniques were applied to enhance functionality and scalability, through advanced tools and skills to achieve industry-specific improvements, (**aligned with Course Outcome 4**).
+- **Use of innovative techniques, skills, and tools**: Innovative techniques were applied to enhance functionality and scalability, through advanced tools and 
+    skills to achieve industry-specific improvements, (**aligned with Course Outcome 4**).
 
-- **Development of a security mindset**: Proactive security measures were taken to ensure the system’s resilience against potential exploits and safeguard data integrity, (**aligned with Course Outcome 5**).
+- **Development of a security mindset**: Proactive security measures were taken to ensure the system’s resilience against potential exploits and safeguard data 
+    integrity, (**aligned with Course Outcome 5**).
 
 ## Reflection:
 
