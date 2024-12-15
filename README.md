@@ -76,7 +76,7 @@ ___
 
 ### Artifact Enhancement:
 
-The codebase was migrated from Java to Python to modernize the system, introducing object-oriented improvements. A base **Pet class** with shared attributes and methods (e.g., grooming for multi-day stays) was implemented, along with subclasses for **Dogs** and **Cats** for pet-specific functions. Python’s dynamic typing and clean syntax provided greater flexibility for future expansion.
+The codebase was migrated from Java to Python, introducing object-oriented improvements. A base **Pet class** with shared attributes and methods (e.g., grooming for multi-day stays) was implemented, along with subclasses for **Dogs** and **Cats** for pet-specific functions. Python’s dynamic typing and clean syntax provided greater flexibility for future expansion.
 
 - Redesigned System Architecture: Transitioned to a modular design for better flexibility and maintainability.
   
@@ -318,7 +318,7 @@ ___
 
 **Databases**:
 
-- **Secure Storage with MySQL**: Built a database to store and organize pet data safely.
+- **Secure Storage with MySQL**: Built a database to store and organize pet data.
   
 - **Real-Time Features**: This feature enabled the system to save updates, retrieve records, and create reports instantly.
   
