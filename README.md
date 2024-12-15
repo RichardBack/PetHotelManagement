@@ -304,10 +304,10 @@ ___
 - **Redesign for Growth:** Updated the system to handle both dogs and cats, using programming techniques like inheritance and encapsulation to keep the 
     design flexible and easy to expand.
   
-- **Easy-to-Use Features**: Added simple, user-friendly functions (like check-in(), check-out(), and updatePet()) to make the system intuitive for users.
+- **Easy-to-Use Features**: Added simple, user-friendly functions (like check-in(), check-out(), and updatePet() to make the system intuitive for users.
 
   ---
-  
+   
 **Algorithms and Data Structures**:
   
 - **Linked Lists for Improved Organization**: Used linked lists to keep pet records organized and easily managed, even as the system grew.
