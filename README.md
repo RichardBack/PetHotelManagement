@@ -251,7 +251,7 @@ ___
 - Prepared statements, secured sensitive data, and prevented SQL injection (**aligned with Course Outcome 5**).
  
 This integration delivered a scalable, secure, and efficient solution.
----
+___
 
 ### Reflection - Category Three: Databases: 
 
