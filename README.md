@@ -308,7 +308,7 @@ ___
 
   ---
   
-***Algorithms and Data Structures**:
+**Algorithms and Data Structures**:
   
 - **Linked Lists for Improved Organization**: Used linked lists to keep pet records organized and easy to manage, even as the system grew.
   
@@ -316,7 +316,7 @@ ___
   
 ---
 
-***Databases**:
+**Databases**:
 
 - **Secure Storage with MySQL**: Built a database to safely store and organize pet data.
   
