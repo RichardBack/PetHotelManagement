@@ -1,5 +1,22 @@
 # Professional ePortfolio of Richard Backscheider
 
+### 💻 Professional Self-Assessment
+
+Completing coursework in the Computer Science program at SNHU and developing this ePortfolio highlights strengths in software development. Various projects demonstrate proficiency in **software engineering and design**, **algorithms and data structures**, **database management**, and **security**.
+
+Some of the key skills developed include:
+
+- Collaborating effectively in a team environment to solve problems.
+  
+- Communicating technical concepts clearly to stakeholders.
+  
+- Demonstrating deep knowledge of **software engineering and design**, **algorithms and data structures**, and **database**  practices.
+  
+- Ensuring **database security** and optimizing code for performance.
+
+This ePortfolio encapsulates the technical growth made during the program, including improvements to projects like **The Dogs Cats Hotel** system. It demonstrates adaptability, optimization skills, and a focus on ensuring security in software systems, reflecting readiness for a successful career in software development.
+___
+
 ### Introduction
 Hi, I'm Richard Backscheider, a 💻 **Computer Scientist and Programmer**.
 
@@ -273,23 +290,6 @@ ___
 - Learned the importance of preventing SQL injection and securing sensitive data.
   
 - Developed skills in integrating Python with MySQL for efficient data management.
-___
-
-### 💻 Professional Self-Assessment
-
-Completing coursework in the Computer Science program at SNHU and developing this ePortfolio highlights strengths in software development. Various projects demonstrate proficiency in **software engineering and design**, **algorithms and data structures**, **database management**, and **security**.
-
-Some of the key skills developed include:
-
-- Collaborating effectively in a team environment to solve problems.
-  
-- Communicating technical concepts clearly to stakeholders.
-  
-- Demonstrating deep knowledge of **software engineering and design**, **algorithms and data structures**, and **database**  practices.
-  
-- Ensuring **database security** and optimizing code for performance.
-
-This ePortfolio encapsulates the technical growth made during the program, including improvements to projects like **The Dogs Cats Hotel** system. It demonstrates adaptability, optimization skills, and a focus on ensuring security in software systems, reflecting readiness for a successful career in software development.
 ___
 
 ### 📊 Project Overview
