@@ -89,7 +89,7 @@ The codebase was migrated from Java to Python, introducing object-oriented impro
 - Enhanced Data Validation: Strengthened input validation to ensure data integrity.
   
 - Improved Documentation: Streamlined code formatting for clarity and maintainability.
----
+___
 
 🎬 **Enhancements Video**  
 Learn about the updates and their impact on the system’s performance and user experience.
@@ -151,7 +151,7 @@ ___
 - Memory Optimization: Enhanced memory utilization for better performance.
   
 - Error Handling: Introduced robust techniques to ensure reliable performance under high load.
----
+___
 
 🎬 **Algorithms and Data Structures Video**  
 Explore the improvements in algorithms and data structures within the system.
@@ -212,8 +212,8 @@ Integrating Python with MySQL, using the **MySQL-connector-python** library, all
 
 **Security Features**: Safeguarded sensitive client and payment information.
 
-### Enhancements focused on improving relational database design, query optimization, and secure data handling with parameterized queries to prevent SQL injection. The project addressed schema consistency, error handling, and improved data integrity.
----
+Enhancements focused on improving relational database design, query optimization, and secure data handling with parameterized queries to prevent SQL injection. The project addressed schema consistency, error handling, and improved data integrity.
+___
 
 🎬 **Database Enhancements Video**  
 Watch how the database improvements have elevated the system's efficiency and security.
