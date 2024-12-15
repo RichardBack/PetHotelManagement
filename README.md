@@ -25,7 +25,7 @@ As a Computer Science graduate from Southern New Hampshire University, I have bu
 Projects such as the **Pet Hotel Management** system demonstrate my ability to design, implement, and secure scalable systems. They highlight growth in **object-oriented programming**, **database management**, and **software reverse engineering**, as well as adaptability to new technologies and problem domains.
 ___
 
-### 🌟 Featured Project: **Pet Hotel Management**system
+### 🌟 Featured Project: **Pet Hotel Management** System
 
 The **Pet Hotel Management** system demonstrates expertise in **software engineering**, **algorithms**, and **database management**. Initially developed as a **Java-based system**, it has since evolved into a **Python-based solution** integrated with **MySQL** to manage dogs and cats effectively. This transition enhanced efficiency, scalability, and database interaction by leveraging Python's flexibility and MySQL's relational database capabilities.
 ___
@@ -80,7 +80,7 @@ The codebase migrated from Java to Python to modernize the system, introducing o
 
 - Redesigned System Architecture: Transitioned to a modular design for better flexibility and maintainability.
   
-- ⚙Scalable Codebase: Improved the code structure to support future functionality.
+- Scalable Codebase: Improved the code structure to support future functionality.
   
 - Service-Oriented Features: Added grooming services and extended stay options tailored to customer needs.
   
