@@ -133,12 +133,13 @@ ___
 ## Artifact Selection and Origin:
 
 The artifact selected for **Algorithms and Data Structures** is the **Pet Boarding and Grooming** project from **IT-145: Foundations in App Development**, later renamed **The Dogs Cats Hotel**. This system replaced paper-based processes to manage pet boarding and grooming services for dogs and cats, streamlining operations and enhancing efficiency.
----
+___
 
 ## Artifact Selection for Portfolio:
 
 The **The Dogs Cats Hotel** system selected for **Algorithms and Data Structures** demonstrates applying advanced data structures, specifically **LinkedList** and **nodes**, for dynamic pet records management. Integrating these structures showcases the ability to design and implement efficient algorithms that optimize performance and scalability.
----
+___
+
 ### Artifact Enhancement:
 
 - Optimized Search Algorithms: Implemented binary search for faster record retrieval.
@@ -161,11 +162,12 @@ ___
 ### Code Reviews in Algorithms:  
 
 Code reviews ensured efficiency and performance of the LinkedList data structure and associated algorithms. They identified potential bottlenecks, security issues, and areas for improvement, fostering collaborative problem-solving and refinement.
----
+___
 
 ## Course Outcome Alignment:
 
-- **Integrating the LinkedList data structure into the system demonstrates alignment with all course outcomes, showcasing a comprehensive approach to system enhancement**:
+- **Integrating the LinkedList data structure into the system demonstrates alignment with all course outcomes, showcasing a comprehensive approach to system 
+    enhancement**:
 
 - **Employ strategies for building collaborative environments**: Collaborative discussions were fostered to understand user needs and ensure the LinkedList 
     implementation supported diverse decision-making processes, (**aligned with Course Outcome 1**).
@@ -193,12 +195,12 @@ ___
 #### Artifact Selection and Origin:
 
 The artifact selected for **Category Three: Databases**, is the **Pet Boarding and Grooming** project from **IT-145: Foundations in App Development**, later renamed **The Dogs Cats Hotel**. This Python-based system uses **MySQL** to manage pet boarding and grooming services. It utilizes Python’s **CRUD (Create, Read, Update, Delete)** operations to handle data interactions with the MySQL database, enabling efficient management of pet records and bookings. Database enhancements for the **The Dogs Cats Hotel** system focused on scalability, data integrity, and system reliability.
----
+___
 
 ## Artifact Selection for Portfolio:
 
 The **The Dogs Cats Hotel** system selected for **Algorithms** demonstrates the integration of Python with MySQL to manage pet and customer records. The project highlights skills in relational database design, CRUD operations (Create, Read, Update, Delete), and ensuring data integrity through parameterized queries to prevent SQL injection. This artifact showcases expertise in database management and is a valuable addition to the portfolio.
----
+___
 
 ### Artifact Enhancement:
 
@@ -211,7 +213,7 @@ The integration of Python with MySQL, using the **MySQL-connector-python** libra
 **Security Features**: Safeguarded sensitive client and payment information.
 
 Enhancements focused on improving relational database design, query optimization, and secure data handling with parameterized queries to prevent SQL injection. The project also addressed schema consistency, error handling, and improved data integrity.
----
+___
 
 🎬 **Database Enhancements Video**  
 Watch how the database improvements have elevated the system's efficiency and security.
@@ -219,10 +221,10 @@ Watch how the database improvements have elevated the system's efficiency and se
 🔗 [Watch the Enhancements Video - Databases](https://youtu.be/7XpiSde4HZs)
 ---
 
-### Code Reviews in Database Integration:  
+## Code Reviews in Database Integration:  
 
 Integrating MySQL into the **The Dogs Cats Hotel** system involved thorough reviews of SQL queries and CRUD operations to ensure secure and optimized interactions with the database. Code reviews highlighted areas for improvement, such as implementing parameterized queries to prevent SQL injection vulnerabilities and optimizing the database schema for scalability and future growth.
----
+___
 
 ## Key Skills
 
