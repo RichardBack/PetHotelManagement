@@ -1,4 +1,4 @@
-# Professional ePortfolio of Richard
+### Professional ePortfolio of Richard
 
 ### Introduction
 Hi, I'm Richard Backscheider, a 💻 **Computer Scientist and Programmer**.
@@ -62,19 +62,19 @@ ___
 
 ### 📊 Personal Assessment
 
-## 📂 Category One: **Computer Engineering and Design**
+### 📂 Category One: **Computer Engineering and Design**
 ---
 
-#### Artifact Selection and Origin:
+## Artifact Selection and Origin:
 
 The selected artifact for **Software Engineering and Design** is the **Pet Boarding and Grooming** software project from **IT-145: Foundations in App Development**. Initially developed to replace outdated paper-based processes, it manages operations at a pet boarding facility, including check-in, check-out, pet management, grooming, and payment tracking. Enhancements expanded the system to include cats and renamed it **The Dogs Cats Hotel**, transitioning from **Java** to **Python** to improve functionality and adhere to **Software Engineering and Design** principles.
 
-#### Artifact Selection for ePortfolio:
+## Artifact Selection for ePortfolio:
 
 This project demonstrates adaptability in transitioning between programming languages and applying object-oriented design principles. The migration from **Java** to **Python** highlights using Python’s dynamic features to improve performance. Key components of the project include the Pet class, which utilizes encapsulation, property decorators, and methods for managing tasks like check-ins and check-outs. These enhancements improved operations, showcasing expertise in software engineering, database integration, and problem-solving.
 ___
 
-### Artifact Enhancement:
+## Artifact Enhancement:
 
 The codebase was migrated from Java to Python to modernize the system, introducing object-oriented improvements. A base **Pet class** with shared attributes and methods (e.g., grooming for multi-day stays) was implemented, along with subclasses for **Dogs** and **Cats** for pet-specific functions. Python’s dynamic typing and clean syntax provided greater flexibility for future expansion.
 
@@ -97,7 +97,7 @@ Learn about the updates and their impact on the system’s performance and user 
 🔗 [Watch the Enhancements Video - Software Engineering and Design](https://youtu.be/THa4Mwbl8nI)
 ___
 
-### Code Reviews in Software Engineering and Design: 
+## Code Reviews in Software Engineering and Design: 
 
 Code reviews were crucial during development, improving design choices and ensuring correct application of object-oriented principles like inheritance and polymorphism. Peer feedback helped refine the system's architecture and optimize the transition from Java to Python.
 ___
@@ -140,7 +140,7 @@ ___
 The **The Dogs Cats Hotel** system selected for **Algorithms and Data Structures** demonstrates the application of advanced data structures, specifically **LinkedList** and **nodes**, for dynamic pet records management. Integrating these structures showcases the ability to design and implement efficient algorithms that optimize performance and scalability.
 ___
 
-### Artifact Enhancement:
+## Artifact Enhancement:
 
 - Optimized Search Algorithms: Implemented binary search for faster record retrieval.
   
@@ -159,7 +159,7 @@ Explore the improvements in algorithms and data structures within the system.
 🔗 [Watch the Enhancements Video - Algorithms and Data Structures](https://youtu.be/z4FT6d7N8iI)
 ___
 
-### Code Reviews in Algorithms:  
+## Code Reviews in Algorithms:  
 
 Code reviews ensured the efficiency and performance of the LinkedList data structure and associated algorithms. They identified potential bottlenecks, security issues, and areas for improvement, fostering collaborative problem-solving and refinement.
 ___
@@ -192,7 +192,7 @@ ___
 ### 📂 Category Three: **Databases**
 ___
 
-#### Artifact Selection and Origin:
+## Artifact Selection and Origin:
 
 The artifact selected for **Category Three: Databases** is the **Pet Boarding and Grooming** project from **IT-145: Foundations in App Development**, later renamed **The Dogs Cats Hotel**. This Python-based system uses **MySQL** to manage pet boarding and grooming services. It utilizes Python’s **CRUD (Create, Read, Update, Delete)** operations to handle data interactions with the MySQL database, enabling efficient management of pet records and bookings. Database enhancements for the **The Dogs Cats Hotel** system focused on scalability, data integrity, and system reliability.
 ___
@@ -202,7 +202,7 @@ ___
 The **The Dogs Cats Hotel** system selected for **Algorithms** demonstrates the integration of Python with MySQL to manage pet and customer records. The project highlights skills in relational database design, CRUD operations (Create, Read, Update, Delete), and ensuring data integrity through parameterized queries to prevent SQL injection. This artifact showcases expertise in database management and is a valuable addition to the portfolio.
 ___
 
-### Artifact Enhancement:
+## Artifact Enhancement:
 
 Integrating Python with MySQL, using the **MySQL-connector-python** library, allowed for efficiently managing pet and customer data. Key enhancements included:
 
@@ -229,9 +229,9 @@ ___
 ## Key Skills
 
 - **Programming Languages**: Java, Python, C++, HTML/CSS, JavaScript
-- 
+  
 - **Software Engineering**: Object-Oriented Programming (OOP), Design Patterns
-- 
+  
 - **Database Management**: SQL, Data Structures
 ---
 
@@ -247,7 +247,7 @@ ___
   3**).
   
 - Advanced techniques, including server configuration, CRUD operations, and query optimization (**aligned with Course Outcome 4**).
-- 
+  
 - Prepared statements, secured sensitive data, and prevented SQL injection (**aligned with Course Outcome 5**).
  
 This integration delivered a scalable, secure, and efficient solution.
@@ -332,7 +332,7 @@ This project meets all five-course outcomes by addressing real-world problems th
 This project highlights practical skills in designing adaptable, user-friendly software that addresses real-world challenges while maintaining high security, efficiency, and performance standards.
 ___
 
-## 💻 Check Out the Code
+### 💻 Check Out the Code
 
 Visit the project’s GitHub page:  
 🔗 [Pet Hotel Management](https://richardback.github.io/PetHotelManagement/)
