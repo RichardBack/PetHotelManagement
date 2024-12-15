@@ -211,7 +211,7 @@ Integrating Python with MySQL, using the **MySQL-connector-python** library, all
 **Optimized Queries**: Improved retrieval times for pet and service records.
 
 **Security Features**: Safeguarded sensitive client and payment information.
-
+---
 Enhancements focused on improving relational database design, query optimization, and secure data handling with parameterized queries to prevent SQL injection. The project addressed schema consistency, error handling, and improved data integrity.
 ---
 
