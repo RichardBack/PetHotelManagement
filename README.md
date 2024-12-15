@@ -5,7 +5,7 @@ Hi, I'm Richard Backscheider, a 💻 **Computer Scientist and Programmer**.
 
 Welcome to my ePortfolio! This document provides an overview of the key projects developed throughout the Computer Science program at Southern New Hampshire University. The projects included here showcase the skills acquired in **software engineering and design**, **algorithms and data structures**, and **databases**.
 
-This portfolio reflects my journey through computer science, emphasizing technical expertise, problem-solving, and adaptability. It highlights proficiency in multiple programming languages, application of software engineering principles, and ability to create innovative real-world solutions. Together, these projects illustrate my growth as a developer and readiness to excel in computer science field.
+This portfolio reflects my journey through computer science, emphasizing technical expertise, problem-solving, and adaptability. It highlights proficiency in multiple programming languages, application of software engineering principles, and ability to create innovative real-world solutions. Together, these projects illustrate my growth as a developer and readiness to excel in the computer science field.
  
 ### This portfolio includes:
 
@@ -22,7 +22,7 @@ ___
 
 As a Computer Science graduate from Southern New Hampshire University, I have built a strong foundation in problem-solving, programming, and algorithms. My academic experience has enhanced my ability to translate concepts into efficient code, organize data effectively using structured algorithms, and create innovative solutions to complex challenges.
 
-Projects such as the **Pet Hotel Management** system demonstrate my ability to design, implement, and secure scalable systems. They highlight growth in **object-oriented programming**, **database management**, and **software reverse engineering**, as well as adaptability to new technologies and problem domains.
+Projects such as the **Pet Hotel Management** system demonstrate my ability to design, implement, and secure scalable systems. They highlight my growth in **object-oriented programming**, **database management**, and **software reverse engineering**, as well as my adaptability to new technologies and problem domains.
 ___
 
 ### 🌟 Featured Project: **Pet Hotel Management** System
@@ -71,12 +71,12 @@ The selected artifact for **Software Engineering and Design** is the **Pet Board
 
 #### Artifact Selection for ePortfolio:
 
-This project demonstrates adaptability in transitioning between programming languages and applying object-oriented design principles. The migration from **Java** to **Python** highlights using Python’s dynamic features to improve performance. Key components of the project include the Pet class, utilizing encapsulation, property decorators, and methods for managing tasks like check-ins and check-outs. These enhancements improved operations, showcasing expertise in software engineering, database integration, and problem-solving.
+This project demonstrates adaptability in transitioning between programming languages and applying object-oriented design principles. The migration from **Java** to **Python** highlights using Python’s dynamic features to improve performance. Key components of the project include the Pet class, which utilizes encapsulation, property decorators, and methods for managing tasks like check-ins and check-outs. These enhancements improved operations, showcasing expertise in software engineering, database integration, and problem-solving.
 ___
 
 ### Artifact Enhancement:
 
-The codebase migrated from Java to Python to modernize the system, introducing object-oriented improvements. A base **Pet class** with shared attributes and methods (e.g., grooming for multi-day stays) was implemented, along with subclasses for **Dogs** and **Cats** for pet-specific functions. Python’s dynamic typing and clean syntax provided greater flexibility for future expansion.
+The codebase was migrated from Java to Python to modernize the system, introducing object-oriented improvements. A base **Pet class** with shared attributes and methods (e.g., grooming for multi-day stays) was implemented, along with subclasses for **Dogs** and **Cats** for pet-specific functions. Python’s dynamic typing and clean syntax provided greater flexibility for future expansion.
 
 - Redesigned System Architecture: Transitioned to a modular design for better flexibility and maintainability.
   
@@ -99,7 +99,7 @@ ___
 
 ### Code Reviews in Software Engineering and Design: 
 
-Code reviews were crucial during the development process, improving design choices and ensuring correct application of object-oriented principles like inheritance and polymorphism. Peer feedback helped refine the system's architecture and optimize the transition from Java to Python.
+Code reviews were crucial during development, improving design choices and ensuring correct application of object-oriented principles like inheritance and polymorphism. Peer feedback helped refine the system's architecture and optimize the transition from Java to Python.
 ___
 
 ## Course Outcome Alignment:
@@ -107,7 +107,7 @@ ___
 The transition of **The Dogs Cats Hotel** from Java to Python effectively demonstrates:
 
 1. **Employ strategies for building collaborative environments**: By collaborating and solving technical challenges during the transition, diverse perspectives 
-     were engaged to support decision-making in adapting the application (**aligned with Course Outcome 1**).
+     were engaged in supporting decision-making in adapting the application (**aligned with Course Outcome 1**).
 
 2. **Professional communication of technical decisions**: Clear documentation and explanations of technical adaptations for varied audiences demonstrated strong 
      written, oral, and visual communication skills (**aligned with Course Outcome 2**).
@@ -132,12 +132,12 @@ ___
 
 ## Artifact Selection and Origin:
 
-The artifact selected for **Algorithms and Data Structures** is the **Pet Boarding and Grooming** project from **IT-145: Foundations in App Development**, later renamed **The Dogs Cats Hotel**. This system replaced paper-based processes to manage pet boarding and grooming services for dogs and cats, streamlining operations and enhancing efficiency.
+The artifact selected for **Algorithms and Data Structures** is the **Pet Boarding and Grooming** project from **IT-145: Foundations in App Development**, later renamed **The Dogs Cats Hotel**. This system replaced paper-based processes for managing pet boarding and grooming services for dogs and cats, streamlining operations and enhancing efficiency.
 ___
 
 ## Artifact Selection for Portfolio:
 
-The **The Dogs Cats Hotel** system selected for **Algorithms and Data Structures** demonstrates applying advanced data structures, specifically **LinkedList** and **nodes**, for dynamic pet records management. Integrating these structures showcases the ability to design and implement efficient algorithms that optimize performance and scalability.
+The **The Dogs Cats Hotel** system selected for **Algorithms and Data Structures** demonstrates the application of advanced data structures, specifically **LinkedList** and **nodes**, for dynamic pet records management. Integrating these structures showcases the ability to design and implement efficient algorithms that optimize performance and scalability.
 ___
 
 ### Artifact Enhancement:
@@ -161,28 +161,28 @@ ___
 
 ### Code Reviews in Algorithms:  
 
-Code reviews ensured efficiency and performance of the LinkedList data structure and associated algorithms. They identified potential bottlenecks, security issues, and areas for improvement, fostering collaborative problem-solving and refinement.
+Code reviews ensured the efficiency and performance of the LinkedList data structure and associated algorithms. They identified potential bottlenecks, security issues, and areas for improvement, fostering collaborative problem-solving and refinement.
 ___
 
 ## Course Outcome Alignment:
 
-- **Integrating the LinkedList data structure into the system demonstrates alignment with all course outcomes, showcasing a comprehensive approach to system 
+- **Integrating the LinkedList data structure into the system demonstrates alignment with all course outcomes, showcasing a comprehensive approach to the system 
     enhancement**:
 
 - **Employ strategies for building collaborative environments**: Collaborative discussions were fostered to understand user needs and ensure the LinkedList 
-    implementation supported diverse decision-making processes, (**aligned with Course Outcome 1**).
+    implementation supported diverse decision-making processes (**aligned with Course Outcome 1**).
 
-- **Professional communication of technical decisions**: The feature’s design, development, and documentation were communicated professionally, through coherent 
-    and technically sound written and visual explanations tailored to stakeholders, (**aligned with Course Outcome 2**).
+- **Professional communication of technical decisions**: The feature’s design, development, and documentation were communicated professionally through coherent 
+    and technically sound written and visual explanations tailored to stakeholders (**aligned with Course Outcome 2**).
 
 - **Application of algorithmic principles and computer science practices**: By optimizing data management with LinkedLists, using algorithmic principles to 
-    balance performance and memory efficiency while managing trade-offs, the project, (**aligned with Course Outcome 3**).
+    balance performance and memory efficiency while managing trade-offs, the project (**aligned with Course Outcome 3**).
 
-- **Use of innovative techniques, skills, and tools**: Innovative techniques were applied to enhance functionality and scalability, through advanced tools and 
-    skills to achieve industry-specific improvements, (**aligned with Course Outcome 4**).
+- **Use of innovative techniques, skills, and tools**: Innovative techniques were applied to enhance functionality and scalability through advanced tools and 
+    skills to achieve industry-specific improvements (**aligned with Course Outcome 4**).
 
 - **Development of a security mindset**: Proactive security measures were taken to ensure the system’s resilience against potential exploits and safeguard data 
-    integrity, (**aligned with Course Outcome 5**).
+    integrity (**aligned with Course Outcome 5**).
 
 ## Reflection:
 
@@ -194,7 +194,7 @@ ___
 
 #### Artifact Selection and Origin:
 
-The artifact selected for **Category Three: Databases**, is the **Pet Boarding and Grooming** project from **IT-145: Foundations in App Development**, later renamed **The Dogs Cats Hotel**. This Python-based system uses **MySQL** to manage pet boarding and grooming services. It utilizes Python’s **CRUD (Create, Read, Update, Delete)** operations to handle data interactions with the MySQL database, enabling efficient management of pet records and bookings. Database enhancements for the **The Dogs Cats Hotel** system focused on scalability, data integrity, and system reliability.
+The artifact selected for **Category Three: Databases** is the **Pet Boarding and Grooming** project from **IT-145: Foundations in App Development**, later renamed **The Dogs Cats Hotel**. This Python-based system uses **MySQL** to manage pet boarding and grooming services. It utilizes Python’s **CRUD (Create, Read, Update, Delete)** operations to handle data interactions with the MySQL database, enabling efficient management of pet records and bookings. Database enhancements for the **The Dogs Cats Hotel** system focused on scalability, data integrity, and system reliability.
 ___
 
 ## Artifact Selection for Portfolio:
@@ -204,7 +204,7 @@ ___
 
 ### Artifact Enhancement:
 
-The integration of Python with MySQL, using the **MySQL-connector-python** library, allowed for the efficient management of pet and customer data. Key enhancements included:
+Integrating Python with MySQL, using the **MySQL-connector-python** library, allowed for efficiently managing pet and customer data. Key enhancements included:
 
 **Streamlined Data Models**: Designed for efficient data access and scalability.
 
@@ -212,7 +212,7 @@ The integration of Python with MySQL, using the **MySQL-connector-python** libra
 
 **Security Features**: Safeguarded sensitive client and payment information.
 
-Enhancements focused on improving relational database design, query optimization, and secure data handling with parameterized queries to prevent SQL injection. The project also addressed schema consistency, error handling, and improved data integrity.
+Enhancements focused on improving relational database design, query optimization, and secure data handling with parameterized queries to prevent SQL injection. The project addressed schema consistency, error handling, and improved data integrity.
 ___
 
 🎬 **Database Enhancements Video**  
@@ -243,12 +243,12 @@ ___
   
 - Professional documentation and clear communication of technical details (**aligned with Course Outcome 2**).
   
-- Designing the relational database schema with algorithmic principles, optimizing data management and balancing trade-offs (**aligned with Course Outcome 
+- Designing the relational database schema with algorithmic principles, optimizing data management, and balancing trade-offs (**aligned with Course Outcome 
   3**).
   
 - Advanced techniques, including server configuration, CRUD operations, and query optimization (**aligned with Course Outcome 4**).
 - 
-- Prepared statements, securing sensitive data, and preventing SQL injection (**aligned with Course Outcome 5**).
+- Prepared statements, secured sensitive data, and prevented SQL injection (**aligned with Course Outcome 5**).
  
 This integration delivered a scalable, secure, and efficient solution.
 ---
@@ -289,12 +289,12 @@ Some of the key skills developed include:
   
 - Ensuring **database security** and optimizing code for performance.
 
-This ePortfolio encapsulates the technical growth made during the program, including improvements to projects such as the **The Dogs Cats Hotel** system. It demonstrates adaptability, optimization skills, and a focus on ensuring security in software systems, reflecting readiness for a successful career in software development.
+This ePortfolio encapsulates the technical growth made during the program, including improvements to projects like **The Dogs Cats Hotel** system. It demonstrates adaptability, optimization skills, and a focus on ensuring security in software systems, reflecting readiness for a successful career in software development.
 ___
 
 ### 📊 Project Overview
 
-The **The Dogs Cats Hotel** system demonstrates a strong set of skills in **software engineering and design**, **algorithm and data structures**, and **databases**. This project began as a simple Java application, growing into a robust, scalable system designed to meet real-world demands in pet management operations.
+**The Dogs Cats Hotel** system demonstrates a strong set of skills in **software engineering and design**, **algorithm and data structures**, and **databases**. This project began as a simple Java application and grew into a robust, scalable system designed to meet real-world demands in pet management operations.
 ___
 
 ## Key Areas of Expertise
@@ -310,7 +310,7 @@ ___
   
 **Algorithms and Data Structures**:
   
-- **Linked Lists for Improved Organization**: Used linked lists to keep pet records organized and easy to manage, even as the system grew.
+- **Linked Lists for Improved Organization**: Used linked lists to keep pet records organized and easily managed, even as the system grew.
   
 - **Improved Performance**: Solved challenges related to speed and efficiency to ensure the system works well with more data.
   
@@ -318,18 +318,18 @@ ___
 
 **Databases**:
 
-- **Secure Storage with MySQL**: Built a database to safely store and organize pet data.
+- **Secure Storage with MySQL**: Built a database to store and organize pet data safely.
   
-- **Real-Time Features**: Enabled the system to save updates, retrieve records, and create reports instantly.
+- **Real-Time Features**: This feature enabled the system to save updates, retrieve records, and create reports instantly.
   
-- **Seamless System Integration**: Used Python tools to connect the database to the rest of the system seamlessly.
+- **Seamless System Integration**: I used Python tools to connect the database to the rest of the system seamlessly.
 ___
 
 ### 🔐 **Overall Reflection**
 
-This project successfully meets all five course outcomes by addressing real-world problems through thoughtful software design, strong communication, and technical expertise. The development of the Pet Hotel Management System exemplifies **Course Outcome 1** through collaborative problem-solving and effective communication, enabling diverse team members to integrate their skills and perspectives to achieve the project’s goals. **Course Outcome 2** is demonstrated through the creation of clear, professional-quality documentation and communication, ensuring both technical and non-technical stakeholders were informed and engaged throughout the project. The application of algorithmic principles and design trade-offs in managing pet records highlights **Course Outcome 3**, optimizing the system for performance and scalability. **Course Outcome 4** is reflected in the integration of Python with MySQL, applying innovative computing techniques to deliver a secure, real-time data management solution. Finally, **Course Outcome 5** is addressed by focusing on security, utilizing parameterized queries to prevent SQL injection and safeguarding sensitive client data, thus ensuring the system’s privacy and security.
+This project meets all five-course outcomes by addressing real-world problems through thoughtful software design, strong communication, and technical expertise. The development of the Pet Hotel Management System exemplifies **Course Outcome 1** through collaborative problem-solving and effective communication, enabling diverse team members to integrate their skills and perspectives to achieve the project’s goals. **Course Outcome 2** is demonstrated by creating clear, professional-quality documentation and communication, ensuring technical and non-technical stakeholders were informed and engaged throughout the project. Applying algorithmic principles and design trade-offs in managing pet records highlights **Course Outcome 3**, optimizing the system for performance and scalability. **Course Outcome 4** is reflected in integrating Python with MySQL, applying innovative computing techniques to deliver a secure, real-time data management solution. Finally, **Course Outcome 5** is addressed by focusing on security, utilizing parameterized queries to prevent SQL injection and safeguarding sensitive client data, thus ensuring the system’s privacy and security.
 
-Overall, this project highlights practical skills in designing adaptable, user-friendly software that addresses real-world challenges while maintaining high standards of security, efficiency, and performance.
+This project highlights practical skills in designing adaptable, user-friendly software that addresses real-world challenges while maintaining high security, efficiency, and performance standards.
 ___
 
 ## 💻 Check Out the Code
